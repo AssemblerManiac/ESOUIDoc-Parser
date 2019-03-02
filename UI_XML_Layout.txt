@@ -1,0 +1,1222 @@
+===Attributes===
+* '''number''' '''[[Globals#TextureAddressMode|TextureAddressMode]]''' ''addressMode''
+* '''boolean''' ''allowBringToTop''
+* '''number''' ''alpha''
+* '''number''' ''anchorIndex''
+* '''boolean''' ''applyAlpha''
+* '''string''' ''applyToChildControlName''
+* '''boolean''' ''autoAdjustTextureCoords''
+* '''number''' '''[[Globals#BarAlignment|BarAlignment]]''' ''barAlignment''
+* '''number''' '''[[Globals#TextureBlendMode|TextureBlendMode]]''' ''blendMode''
+* '''number''' ''cellsHigh''
+* '''number''' ''cellsWide''
+* '''string''' ''centerColor''
+* '''boolean''' ''clampedToScreen''
+* '''string''' ''clickSound''
+* '''string''' ''color''
+* '''number''' ''delay''
+* '''number''' ''deltaX''
+* '''number''' ''deltaXFromEnd''
+* '''number''' ''deltaY''
+* '''number''' ''deltaYFromEnd''
+* '''number''' ''deltaZ''
+* '''number''' ''deltaZFromEnd''
+* '''number''' ''desaturation''
+* '''string''' ''disabled''
+* '''string''' ''disabledColor''
+* '''string''' ''disabledPressed''
+* '''string''' ''disabledPressedColor''
+* '''boolean''' ''dragFromThumb''
+* '''boolean''' ''drawLastEntryIfOutOfRoom''
+* '''number''' ''duration''
+* '''string''' ''edgeColor''
+* '''boolean''' ''editEnabled''
+* '''boolean''' ''enableFadeOut''
+* '''boolean''' ''enabled''
+* '''number''' ''endAlpha''
+* '''number''' ''endCapWidth''
+* '''string''' ''endColor''
+* '''number''' ''endHeight''
+* '''number''' ''endPitch''
+* '''number''' ''endRoll''
+* '''number''' ''endRotation''
+* '''number''' ''endScale''
+* '''number''' ''endWidth''
+* '''number''' ''endX''
+* '''number''' ''endY''
+* '''number''' ''endYaw''
+* '''number''' ''endZ''
+* '''boolean''' ''escapeMarkup''
+* '''boolean''' ''excludeFromResizeToFitExtents''
+* '''string''' ''fadeOutGainColor''
+* '''string''' ''fadeOutLossColor''
+* '''string''' ''fadeOutTextureFile''
+* '''string''' ''fillColor''
+* '''string''' ''font''
+* '''number''' ''framerate''
+* '''number''' ''headerRowSpacing''
+* '''number''' ''headerVerticalOffset''
+* '''boolean''' ''hidden''
+* '''number''' '''[[Globals#TextAlignment|TextAlignment]]''' ''horizontalAlignment''
+* '''number''' ''id''
+* '''boolean''' ''inheritAlpha''
+* '''boolean''' ''inheritScale''
+* '''string''' ''inherits''
+* '''boolean''' ''integralWrapping''
+* '''boolean''' ''keyboardEnabled''
+* '''string''' ''layer''
+* '''string''' ''leadingEdgeTexture''
+* '''number''' ''level''
+* '''number''' ''lineSpacing''
+* '''boolean''' ''linkEnabled''
+* '''string''' ''loopCount''
+* '''number''' ''maxHistoryLines''
+* '''number''' ''maxInputCharacters''
+* '''number''' ''maxLineCount''
+* '''number''' ''minDuration''
+* '''number''' ''minLineCount''
+* '''boolean''' ''mirrorAlongX''
+* '''boolean''' ''mirrorAlongY''
+* '''number''' '''[[Globals#ModifyTextType|ModifyTextType]]''' ''modifyTextType''
+* '''boolean''' ''mouseEnabled''
+* '''string''' ''mouseOver''
+* '''number''' '''[[Globals#TextureBlendMode|TextureBlendMode]]''' ''mouseOverBlendMode''
+* '''string''' ''mouseOverColor''
+* '''boolean''' ''movable''
+* '''boolean''' ''multiLine''
+* '''boolean''' ''newLineEnabled''
+* '''number''' ''newLineIndent''
+* '''string''' ''normal''
+* '''string''' ''normalColor''
+* '''number''' '''[[Globals#ControlOrientation|ControlOrientation]]''' ''orientation''
+* '''string''' ''pinFont''
+* '''boolean''' ''pixelRoundingEnabled''
+* '''number''' '''[[Globals#AnimationPlayback|AnimationPlayback]]''' ''playbackType''
+* '''string''' ''pressed''
+* '''string''' ''pressedColor''
+* '''string''' ''pressedMouseOver''
+* '''boolean''' ''radialCooldownClockwise''
+* '''number''' ''radialCooldownOriginAngle''
+* '''number''' ''resizeHandleSize''
+* '''boolean''' ''resizeToFitDescendents''
+* '''boolean''' ''resizeToFitFile''
+* '''number''' ''scale''
+* '''string''' ''selectionColor''
+* '''number''' '''[[Globals#ShaderEffectType|ShaderEffectType]]''' ''shaderEffectType''
+* '''number''' '''[[Globals#ShapeType|ShapeType]]''' ''shape''
+* '''boolean''' ''splitLongMessages''
+* '''number''' ''startAlpha''
+* '''string''' ''startColor''
+* '''number''' ''startHeight''
+* '''number''' ''startPitch''
+* '''number''' ''startRoll''
+* '''number''' ''startRotation''
+* '''number''' ''startScale''
+* '''number''' ''startWidth''
+* '''number''' ''startX''
+* '''number''' ''startY''
+* '''number''' ''startYaw''
+* '''number''' ''startZ''
+* '''number''' ''step''
+* '''string''' ''styleColor''
+* '''string''' ''text''
+* '''string''' ''textType''
+* '''number''' ''textureCoordsRotation''
+* '''string''' ''textureFile''
+* '''number''' '''[[Globals#ReleaseReferenceOptions|ReleaseReferenceOptions]]''' ''textureFileReleaseOption''
+* '''number''' ''thickness''
+* '''string''' ''tier''
+* '''boolean''' ''topmost''
+* '''number''' '''[[Globals#TextAlignment|TextAlignment]]''' ''verticalAlignment''
+* '''number''' '''[[Globals#TextWrapMode|TextWrapMode]]''' ''wrapMode''
+
+
+===AlphaAnimation===
+* [[#AnimationBase|Inherits: AnimationBase]]
+* [[#Attributes|Child: endAlpha]]
+* [[#Attributes|Child: startAlpha]]
+
+
+===Anchor===
+* ''attribute:'' '''[[Globals#AnchorPosition|AnchorPosition]]''' ''point''
+* ''attribute:'' '''[[Globals#AnchorPosition|AnchorPosition]]''' ''relativePoint''
+* ''attribute:'' '''string''' ''relativeTo''
+* ''attribute:'' '''number''' ''offsetX''
+* ''attribute:'' '''number''' ''offsetY''
+* ''attribute:'' '''[[Globals#AnchorConstrains|AnchorConstrains]]''' ''constrains''
+
+
+===AnchorFill===
+
+
+===AnchorToBaseline===
+* ''attribute:'' '''string''' ''relativeToLabel''
+* ''attribute:'' '''number''' ''offsetX''
+* ''attribute:'' '''[[Globals#AnchorPosition|AnchorPosition]]''' ''side''
+
+
+===AnimationBase===
+* ''attribute:'' '''string''' ''name''
+* [[#EasingFunction|Child: EasingFunction]]
+* [[#OnPlay_Animation|Child: OnPlay_Animation]]
+* [[#OnStop_Animation|Child: OnStop_Animation]]
+* [[#Attributes|Child: applyToChildControlName]]
+* [[#Attributes|Child: delay]]
+* [[#Attributes|Child: duration]]
+* [[#Attributes|Child: enabled]]
+* [[#Attributes|Child: inherits]]
+
+
+===AnimationTimeline===
+* ''attribute:'' '''string''' ''name''
+* [[#Animations|Child: Animations]]
+* [[#Callbacks|Child: Callbacks]]
+* [[#OnDurationChanged|Child: OnDurationChanged]]
+* [[#OnPlay|Child: OnPlay]]
+* [[#OnStop|Child: OnStop]]
+* [[#Attributes|Child: delay]]
+* [[#Attributes|Child: enabled]]
+* [[#Attributes|Child: inherits]]
+* [[#Attributes|Child: loopCount]]
+* [[#Attributes|Child: minDuration]]
+* [[#Attributes|Child: playbackType]]
+
+
+===Animations===
+* [[#AlphaAnimation|Child: AlphaAnimation]]
+* [[#AnimationTimeline|Child: AnimationTimeline]]
+* [[#ColorAnimation|Child: ColorAnimation]]
+* [[#CustomAnimation|Child: CustomAnimation]]
+* [[#Rotate3DAnimation|Child: Rotate3DAnimation]]
+* [[#ScaleAnimation|Child: ScaleAnimation]]
+* [[#SizeAnimation|Child: SizeAnimation]]
+* [[#TextureAnimation|Child: TextureAnimation]]
+* [[#TextureRotateAnimation|Child: TextureRotateAnimation]]
+* [[#Translate3DAnimation|Child: Translate3DAnimation]]
+* [[#TranslateAnimation|Child: TranslateAnimation]]
+
+
+===Backdrop===
+* [[#Control|Inherits: Control]]
+* [[#Center|Child: Center]]
+* [[#Edge|Child: Edge]]
+* [[#Insets|Child: Insets]]
+* [[#Attributes|Child: blendMode]]
+* [[#Attributes|Child: centerColor]]
+* [[#Attributes|Child: edgeColor]]
+* [[#Attributes|Child: integralWrapping]]
+* [[#Attributes|Child: pixelRoundingEnabled]]
+* [[#Attributes|Child: textureFileReleaseOption]]
+
+
+===BackgroundBottom===
+* ''attribute:'' '''string''' ''textureFile''
+* ''attribute:'' '''number''' ''left''
+* ''attribute:'' '''number''' ''top''
+* ''attribute:'' '''number''' ''bottom''
+* ''attribute:'' '''number''' ''right''
+
+
+===BackgroundMiddle===
+* ''attribute:'' '''string''' ''textureFile''
+* ''attribute:'' '''number''' ''left''
+* ''attribute:'' '''number''' ''top''
+* ''attribute:'' '''number''' ''bottom''
+* ''attribute:'' '''number''' ''right''
+
+
+===BackgroundTop===
+* ''attribute:'' '''string''' ''textureFile''
+* ''attribute:'' '''number''' ''left''
+* ''attribute:'' '''number''' ''top''
+* ''attribute:'' '''number''' ''bottom''
+* ''attribute:'' '''number''' ''right''
+
+
+===Browser===
+* [[#Control|Inherits: Control]]
+* [[#OnLoadFinished|Child: OnLoadFinished]]
+* [[#OnLoadStart|Child: OnLoadStart]]
+* [[#OnRequestClose|Child: OnRequestClose]]
+
+
+===Button===
+* [[#Control|Inherits: Control]]
+* [[#ButtonState|Child: ButtonState]]
+* [[#FontColors|Child: FontColors]]
+* [[#MouseButton|Child: MouseButton]]
+* [[#NormalOffset|Child: NormalOffset]]
+* [[#OnClicked|Child: OnClicked]]
+* [[#PressedOffset|Child: PressedOffset]]
+* [[#TextureCoords|Child: TextureCoords]]
+* [[#Textures|Child: Textures]]
+* [[#Attributes|Child: clickSound]]
+* [[#Attributes|Child: endCapWidth]]
+* [[#Attributes|Child: font]]
+* [[#Attributes|Child: horizontalAlignment]]
+* [[#Attributes|Child: modifyTextType]]
+* [[#Attributes|Child: mouseOverBlendMode]]
+* [[#Attributes|Child: pixelRoundingEnabled]]
+* [[#Attributes|Child: text]]
+* [[#Attributes|Child: textureFileReleaseOption]]
+* [[#Attributes|Child: verticalAlignment]]
+
+
+===ButtonState===
+* ''attribute:'' '''[[Globals#ButtonState|ButtonState]]''' ''state''
+* ''attribute:'' '''boolean''' ''locked''
+
+
+===Callback===
+* [[#OnInsertAnimationTimelineCallback|Inherits: OnInsertAnimationTimelineCallback]]
+* '''ScriptArguments:''' ''local self, time = ...''
+
+
+===Callbacks===
+* [[#Callback|Child: Callback]]
+
+
+===Center===
+* ''attribute:'' '''string''' ''file''
+* ''attribute:'' '''boolean''' ''tiled''
+* ''attribute:'' '''number''' ''tileSize''
+
+
+===ClampedToScreenInsets===
+* ''attribute:'' '''number''' ''left''
+* ''attribute:'' '''number''' ''top''
+* ''attribute:'' '''number''' ''right''
+* ''attribute:'' '''number''' ''bottom''
+
+
+===ClearAnchors===
+
+
+===ColorAnimation===
+* [[#AnimationBase|Inherits: AnimationBase]]
+* [[#Attributes|Child: applyAlpha]]
+* [[#Attributes|Child: endColor]]
+* [[#Attributes|Child: startColor]]
+
+
+===ColorSelect===
+* [[#Control|Inherits: Control]]
+* [[#OnColorSelected|Child: OnColorSelected]]
+
+
+===Compass===
+* [[#Control|Inherits: Control]]
+* [[#CompassPinType|Child: CompassPinType]]
+
+
+===CompassPinType===
+* ''attribute:'' '''[[Globals#MapDisplayPinType|MapDisplayPinType]]''' ''name''
+* ''attribute:'' '''number''' ''pinSize''
+* ''attribute:'' '''string''' ''pinTexture''
+* ''attribute:'' '''string''' ''areaTexture''
+* ''attribute:'' '''string''' ''aboveTexture''
+* ''attribute:'' '''string''' ''belowTexture''
+* ''attribute:'' '''string''' ''linkTexture''
+* ''attribute:'' '''boolean''' ''clamped''
+* ''attribute:'' '''boolean''' ''allowUpdatesWhenAnimating''
+* ''attribute:'' '''number''' ''minScale''
+* ''attribute:'' '''number''' ''maxScale''
+* ''attribute:'' '''number''' ''minVisibleScale''
+* ''attribute:'' '''number''' ''minAlpha''
+* ''attribute:'' '''number''' ''maxAlpha''
+* ''attribute:'' '''number''' ''minVisibleAlpha''
+* ''attribute:'' '''number''' ''maxVisibleNormalizedDistance''
+* ''attribute:'' '''number''' ''leadingScaleCoefficient''
+* ''attribute:'' '''number''' ''scaleCoefficient''
+* ''attribute:'' '''number''' ''scaleConstant''
+* ''attribute:'' '''number''' ''leadingAlphaCoefficient''
+* ''attribute:'' '''number''' ''alphaCoefficient''
+* ''attribute:'' '''number''' ''alphaConstant''
+* ''attribute:'' '''string''' ''animation''
+* ''attribute:'' '''string''' ''addedAnimation''
+* ''attribute:'' '''string''' ''removedAnimation''
+* ''attribute:'' '''[[Globals#DrawLayer|DrawLayer]]''' ''layer''
+* ''attribute:'' '''number''' ''drawLevelOffsetBase''
+
+
+===Control===
+* ''attribute:'' '''string''' ''name''
+* ''attribute:'' '''boolean''' ''virtual''
+* ''attribute:'' '''boolean''' ''override''
+* ''attribute:'' '''[[Globals#ControlAccessControl|ControlAccessControl]]''' ''accessControl''
+* [[#Anchor|Child: Anchor]]
+* [[#AnchorFill|Child: AnchorFill]]
+* [[#ClampedToScreenInsets|Child: ClampedToScreenInsets]]
+* [[#ClearAnchors|Child: ClearAnchors]]
+* [[#Controls|Child: Controls]]
+* [[#DimensionConstraints|Child: DimensionConstraints]]
+* [[#Dimensions|Child: Dimensions]]
+* [[#HitInsets|Child: HitInsets]]
+* [[#OnChar|Child: OnChar]]
+* [[#OnDragStart|Child: OnDragStart]]
+* [[#OnEffectivelyHidden|Child: OnEffectivelyHidden]]
+* [[#OnEffectivelyShown|Child: OnEffectivelyShown]]
+* [[#OnHide|Child: OnHide]]
+* [[#OnInitialized|Child: OnInitialized]]
+* [[#OnKeyDown|Child: OnKeyDown]]
+* [[#OnKeyUp|Child: OnKeyUp]]
+* [[#OnMouseDoubleClick|Child: OnMouseDoubleClick]]
+* [[#OnMouseDown|Child: OnMouseDown]]
+* [[#OnMouseEnter|Child: OnMouseEnter]]
+* [[#OnMouseExit|Child: OnMouseExit]]
+* [[#OnMouseUp|Child: OnMouseUp]]
+* [[#OnMouseWheel|Child: OnMouseWheel]]
+* [[#OnMoveStart|Child: OnMoveStart]]
+* [[#OnMoveStop|Child: OnMoveStop]]
+* [[#OnReceiveDrag|Child: OnReceiveDrag]]
+* [[#OnRectChanged|Child: OnRectChanged]]
+* [[#OnRectHeightChanged|Child: OnRectHeightChanged]]
+* [[#OnRectWidthChanged|Child: OnRectWidthChanged]]
+* [[#OnResizeStart|Child: OnResizeStart]]
+* [[#OnResizeStop|Child: OnResizeStop]]
+* [[#OnResizedToFit|Child: OnResizedToFit]]
+* [[#OnShow|Child: OnShow]]
+* [[#OnUpdate|Child: OnUpdate]]
+* [[#ResizeToFitPadding|Child: ResizeToFitPadding]]
+* [[#Attributes|Child: alpha]]
+* [[#Attributes|Child: clampedToScreen]]
+* [[#Attributes|Child: excludeFromResizeToFitExtents]]
+* [[#Attributes|Child: hidden]]
+* [[#Attributes|Child: id]]
+* [[#Attributes|Child: inheritAlpha]]
+* [[#Attributes|Child: inheritScale]]
+* [[#Attributes|Child: inherits]]
+* [[#Attributes|Child: keyboardEnabled]]
+* [[#Attributes|Child: layer]]
+* [[#Attributes|Child: level]]
+* [[#Attributes|Child: mouseEnabled]]
+* [[#Attributes|Child: movable]]
+* [[#Attributes|Child: resizeHandleSize]]
+* [[#Attributes|Child: resizeToFitDescendents]]
+* [[#Attributes|Child: scale]]
+* [[#Attributes|Child: tier]]
+
+
+===Controls===
+* [[#Backdrop|Child: Backdrop]]
+* [[#Browser|Child: Browser]]
+* [[#Button|Child: Button]]
+* [[#ColorSelect|Child: ColorSelect]]
+* [[#Compass|Child: Compass]]
+* [[#Control|Child: Control]]
+* [[#Cooldown|Child: Cooldown]]
+* [[#DebugText|Child: DebugText]]
+* [[#EditBox|Child: EditBox]]
+* [[#Label|Child: Label]]
+* [[#Line|Child: Line]]
+* [[#MapDisplay|Child: MapDisplay]]
+* [[#Scroll|Child: Scroll]]
+* [[#Slider|Child: Slider]]
+* [[#StatusBar|Child: StatusBar]]
+* [[#TextBuffer|Child: TextBuffer]]
+* [[#Texture|Child: Texture]]
+* [[#TextureComposite|Child: TextureComposite]]
+* [[#Tooltip|Child: Tooltip]]
+* [[#TopLevelControl|Child: TopLevelControl]]
+
+
+===Cooldown===
+* [[#Control|Inherits: Control]]
+* [[#RadialCooldownGradient|Child: RadialCooldownGradient]]
+* [[#Attributes|Child: blendMode]]
+* [[#Attributes|Child: fillColor]]
+* [[#Attributes|Child: leadingEdgeTexture]]
+* [[#Attributes|Child: radialCooldownClockwise]]
+* [[#Attributes|Child: radialCooldownOriginAngle]]
+* [[#Attributes|Child: textureFile]]
+* [[#Attributes|Child: textureFileReleaseOption]]
+
+
+===CustomAnimation===
+* [[#AnimationBase|Inherits: AnimationBase]]
+* [[#UpdateFunction|Child: UpdateFunction]]
+
+
+===DebugText===
+* [[#Control|Inherits: Control]]
+* [[#Attributes|Child: font]]
+
+
+===DimensionConstraints===
+* ''attribute:'' '''number''' ''minX''
+* ''attribute:'' '''number''' ''minY''
+* ''attribute:'' '''number''' ''maxX''
+* ''attribute:'' '''number''' ''maxY''
+
+
+===Dimensions===
+* ''attribute:'' '''number''' ''x''
+* ''attribute:'' '''number''' ''y''
+
+
+===EasingFunction===
+* [[#OnSetAnimationEaseFunction|Inherits: OnSetAnimationEaseFunction]]
+* ScriptArguments: local progress = ...
+
+
+===Edge===
+* ''attribute:'' '''string''' ''file''
+* ''attribute:'' '''number''' ''edgeFileWidth''
+* ''attribute:'' '''number''' ''edgeFileHeight''
+* ''attribute:'' '''number''' ''edgeSize''
+* ''attribute:'' '''number''' ''edgeFilePadding''
+
+
+===EditBox===
+* [[#Control|Inherits: Control]]
+* [[#OnBackspace|Child: OnBackspace]]
+* [[#OnDownArrow|Child: OnDownArrow]]
+* [[#OnEnter|Child: OnEnter]]
+* [[#OnEscape|Child: OnEscape]]
+* [[#OnFocusGained|Child: OnFocusGained]]
+* [[#OnFocusLost|Child: OnFocusLost]]
+* [[#OnIMEBeginComposition|Child: OnIMEBeginComposition]]
+* [[#OnIMEEndComposition|Child: OnIMEEndComposition]]
+* [[#OnPageDown|Child: OnPageDown]]
+* [[#OnPageUp|Child: OnPageUp]]
+* [[#OnSpace|Child: OnSpace]]
+* [[#OnTab|Child: OnTab]]
+* [[#OnTextChanged|Child: OnTextChanged]]
+* [[#OnUpArrow|Child: OnUpArrow]]
+* [[#Attributes|Child: color]]
+* [[#Attributes|Child: editEnabled]]
+* [[#Attributes|Child: escapeMarkup]]
+* [[#Attributes|Child: font]]
+* [[#Attributes|Child: maxInputCharacters]]
+* [[#Attributes|Child: multiLine]]
+* [[#Attributes|Child: newLineEnabled]]
+* [[#Attributes|Child: selectionColor]]
+* [[#Attributes|Child: textType]]
+
+
+===FadeGradient===
+* ''attribute:'' '''number''' ''x1''
+* ''attribute:'' '''number''' ''y1''
+* ''attribute:'' '''number''' ''size1''
+* ''attribute:'' '''number''' ''x2''
+* ''attribute:'' '''number''' ''y2''
+* ''attribute:'' '''number''' ''size2''
+
+
+===Font===
+* ''attribute:'' '''string''' ''name''
+* ''attribute:'' '''boolean''' ''virtual''
+* [[#sentinel_element|Child: sentinel_element]]
+* [[#Attributes|Child: font]]
+* [[#Attributes|Child: inherits]]
+
+
+===FontColors===
+* [[#Attributes|Child: disabledColor]]
+* [[#Attributes|Child: disabledPressedColor]]
+* [[#Attributes|Child: mouseOverColor]]
+* [[#Attributes|Child: normalColor]]
+* [[#Attributes|Child: pressedColor]]
+
+
+===GuiXml===
+* [[#Animations|Child: Animations]]
+* [[#Controls|Child: Controls]]
+* [[#Font|Child: Font]]
+* [[#String|Child: String]]
+
+
+===HitInsets===
+* ''attribute:'' '''number''' ''left''
+* ''attribute:'' '''number''' ''top''
+* ''attribute:'' '''number''' ''right''
+* ''attribute:'' '''number''' ''bottom''
+
+
+===Insets===
+* ''attribute:'' '''number''' ''left''
+* ''attribute:'' '''number''' ''top''
+* ''attribute:'' '''number''' ''right''
+* ''attribute:'' '''number''' ''bottom''
+
+
+===Label===
+* [[#Control|Inherits: Control]]
+* [[#AnchorToBaseline|Child: AnchorToBaseline]]
+* [[#OnLinkClicked|Child: OnLinkClicked]]
+* [[#OnLinkMouseUp|Child: OnLinkMouseUp]]
+* [[#OnTextChanged|Child: OnTextChanged]]
+* [[#OnUserAreaCreated|Child: OnUserAreaCreated]]
+* [[#Attributes|Child: color]]
+* [[#Attributes|Child: font]]
+* [[#Attributes|Child: horizontalAlignment]]
+* [[#Attributes|Child: lineSpacing]]
+* [[#Attributes|Child: linkEnabled]]
+* [[#Attributes|Child: maxLineCount]]
+* [[#Attributes|Child: minLineCount]]
+* [[#Attributes|Child: modifyTextType]]
+* [[#Attributes|Child: newLineIndent]]
+* [[#Attributes|Child: pixelRoundingEnabled]]
+* [[#Attributes|Child: styleColor]]
+* [[#Attributes|Child: text]]
+* [[#Attributes|Child: verticalAlignment]]
+* [[#Attributes|Child: wrapMode]]
+
+
+===LeadingEdge===
+* ''attribute:'' '''string''' ''textureFile''
+* ''attribute:'' '''number''' ''width''
+* ''attribute:'' '''number''' ''height''
+
+
+===LeadingEdgeTextureCoords===
+* ''attribute:'' '''number''' ''left''
+* ''attribute:'' '''number''' ''right''
+* ''attribute:'' '''number''' ''top''
+* ''attribute:'' '''number''' ''bottom''
+
+
+===Limits===
+* ''attribute:'' '''number''' ''min''
+* ''attribute:'' '''number''' ''max''
+
+
+===Line===
+* [[#Control|Inherits: Control]]
+* [[#TextureCoords|Child: TextureCoords]]
+* [[#Attributes|Child: blendMode]]
+* [[#Attributes|Child: color]]
+* [[#Attributes|Child: pixelRoundingEnabled]]
+* [[#Attributes|Child: textureFile]]
+* [[#Attributes|Child: thickness]]
+
+
+===LineFade===
+* ''attribute:'' '''number''' ''fadeBegin''
+* ''attribute:'' '''number''' ''fadeDuration''
+
+
+===LocalDimensions3D===
+* ''attribute:'' '''number''' ''x''
+* ''attribute:'' '''number''' ''y''
+
+
+===MapDisplay===
+* [[#Control|Inherits: Control]]
+* [[#MapGutter|Child: MapGutter]]
+* [[#MapPinType|Child: MapPinType]]
+* [[#OnVisibleRadiusChanged|Child: OnVisibleRadiusChanged]]
+* [[#Attributes|Child: pinFont]]
+* [[#Attributes|Child: shape]]
+
+
+===MapGutter===
+* ''attribute:'' '''number''' ''offset''
+* ''attribute:'' '''number''' ''size''
+
+
+===MapPinType===
+* ''attribute:'' '''[[Globals#MapDisplayPinType|MapDisplayPinType]]''' ''name''
+* ''attribute:'' '''[[Globals#MapArrowType|MapArrowType]]''' ''arrowType''
+* ''attribute:'' '''number''' ''pinSize''
+* ''attribute:'' '''number''' ''pinXInset''
+* ''attribute:'' '''number''' ''pinYInset''
+* ''attribute:'' '''number''' ''arrowSize''
+* ''attribute:'' '''string''' ''pinTexture''
+* ''attribute:'' '''string''' ''arrowTexture''
+* ''attribute:'' '''string''' ''areaTexture''
+* ''attribute:'' '''string''' ''aboveTexture''
+* ''attribute:'' '''string''' ''belowTexture''
+* ''attribute:'' '''string''' ''linkTexture''
+* ''attribute:'' '''string''' ''animation''
+* ''attribute:'' '''string''' ''addedAnimation''
+* ''attribute:'' '''string''' ''removedAnimation''
+* ''attribute:'' '''[[Globals#MapPinAnimationTarget|MapPinAnimationTarget]]''' ''animationTarget''
+
+
+===MouseButton===
+* ''attribute:'' '''number''' ''button''
+* ''attribute:'' '''boolean''' ''enabled''
+
+
+===NormalOffset===
+* ''attribute:'' '''number''' ''x''
+* ''attribute:'' '''number''' ''y''
+
+
+===OnAddGameData===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnBackspace===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnChar===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, key = ...''
+
+
+===OnCleared===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnClicked===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, button, ctrl, alt, shift, command = ...''
+
+
+===OnColorSelected===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, r, g, b = ...''
+
+
+===OnDownArrow===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnDragStart===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, button = ...''
+
+
+===OnDurationChanged===
+* [[#OnSetAnimationTimelineEventHandler|Inherits: OnSetAnimationTimelineEventHandler]]
+* '''ScriptArguments:''' ''local self, duration = ...''
+
+
+===OnEffectivelyHidden===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, hidden = ...''
+
+
+===OnEffectivelyShown===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, hidden = ...''
+
+
+===OnEnabledStateChanged===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, enabled = ...''
+
+
+===OnEnter===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnEscape===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnFocusGained===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnFocusLost===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnHide===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, hidden = ...''
+
+
+===OnIMEBeginComposition===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnIMEEndComposition===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnInitialized===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnInsertAnimationTimelineCallback===
+* ''attribute:'' '''number''' ''delay''
+
+
+===OnKeyDown===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, key, ctrl, alt, shift, command = ...''
+
+
+===OnKeyUp===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, key, ctrl, alt, shift, command = ...''
+
+
+===OnLinkClicked===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, linkData, linkText, button, ctrl, alt, shift, command = ...''
+
+
+===OnLinkMouseUp===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, linkData, linkText, button, ctrl, alt, shift, command = ...''
+
+
+===OnLoadFinished===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnLoadStart===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnMinMaxValueChanged===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, min, max = ...''
+
+
+===OnMouseDoubleClick===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, button, ctrl, alt, shift, command = ...''
+
+
+===OnMouseDown===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, button, ctrl, alt, shift, command = ...''
+
+
+===OnMouseEnter===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnMouseExit===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnMouseUp===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, button, upInside, ctrl, alt, shift, command = ...''
+
+
+===OnMouseWheel===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, delta, ctrl, alt, shift, command = ...''
+
+
+===OnMoveStart===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnMoveStop===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnPageDown===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnPageUp===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnPlay===
+* [[#OnSetAnimationTimelineEventHandler|Inherits: OnSetAnimationTimelineEventHandler]]
+* '''ScriptArguments:''' ''local self, completedPlaying = ...''
+
+
+===OnPlay_Animation===
+* [[#OnSetAnimationEventHandler|Inherits: OnSetAnimationEventHandler]]
+* '''ScriptArguments:''' ''local self, animatingControl, completedPlaying = ...''
+
+
+===OnReceiveDrag===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, button = ...''
+
+
+===OnRectChanged===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, newLeft, newTop, newRight, newBottom, oldLeft, oldTop, oldRight, oldBottom = ...''
+
+
+===OnRectHeightChanged===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, newHeight, oldHeight = ...''
+
+
+===OnRectWidthChanged===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, newWidth, oldWidth = ...''
+
+
+===OnRequestClose===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnResizeStart===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnResizeStop===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnResizedToFit===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, desiredWidth, desiredHeight = ...''
+
+
+===OnScrollExtentsChanged===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, horizontal, vertical = ...''
+
+
+===OnScrollOffsetChanged===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, horizontal, vertical = ...''
+
+
+===OnSetAnimationEaseFunction===
+
+
+===OnSetAnimationEventHandler===
+
+
+===OnSetAnimationTimelineEventHandler===
+
+
+===OnSetControlEventHandler===
+
+
+===OnSetUpdateFunction===
+
+
+===OnShow===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, hidden = ...''
+
+
+===OnSliderReleased===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, value = ...''
+
+
+===OnSpace===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnStop===
+* [[#OnSetAnimationTimelineEventHandler|Inherits: OnSetAnimationTimelineEventHandler]]
+* '''ScriptArguments:''' ''local self, completedPlaying = ...''
+
+
+===OnStop_Animation===
+* [[#OnSetAnimationEventHandler|Inherits: OnSetAnimationEventHandler]]
+* '''ScriptArguments:''' ''local self, animatingControl, completedPlaying = ...''
+
+
+===OnTab===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnTextChanged===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnTextureLoaded===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnUpArrow===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self = ...''
+
+
+===OnUpdate===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, time = ...''
+
+
+===OnUserAreaCreated===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, areaData, areaText, left, right, top, bottom, continuation = ...''
+
+
+===OnValueChanged===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, value, eventReason = ...''
+
+
+===OnVisibleRadiusChanged===
+* [[#OnSetControlEventHandler|Inherits: OnSetControlEventHandler]]
+* '''ScriptArguments:''' ''local self, radius = ...''
+
+
+===PressedOffset===
+* ''attribute:'' '''number''' ''x''
+* ''attribute:'' '''number''' ''y''
+
+
+===RadialCooldownGradient===
+* ''attribute:'' '''number''' ''startAlpha''
+* ''attribute:'' '''number''' ''angularDistance''
+
+
+===ResizeToFitPadding===
+* ''attribute:'' '''number''' ''width''
+* ''attribute:'' '''number''' ''height''
+
+
+===Rotate3DAnimation===
+* [[#AnimationBase|Inherits: AnimationBase]]
+* [[#Attributes|Child: endPitch]]
+* [[#Attributes|Child: endRoll]]
+* [[#Attributes|Child: endYaw]]
+* [[#Attributes|Child: startPitch]]
+* [[#Attributes|Child: startRoll]]
+* [[#Attributes|Child: startYaw]]
+
+
+===ScaleAnimation===
+* [[#AnimationBase|Inherits: AnimationBase]]
+* [[#Attributes|Child: endScale]]
+* [[#Attributes|Child: startScale]]
+
+
+===Scroll===
+* [[#Control|Inherits: Control]]
+* [[#FadeGradient|Child: FadeGradient]]
+* [[#OnScrollExtentsChanged|Child: OnScrollExtentsChanged]]
+* [[#OnScrollOffsetChanged|Child: OnScrollOffsetChanged]]
+
+
+===ScrollingOverlay===
+* ''attribute:'' '''string''' ''textureFile''
+* ''attribute:'' '''number''' ''width''
+* ''attribute:'' '''number''' ''height''
+* ''attribute:'' '''number''' ''duration''
+
+
+===SizeAnimation===
+* [[#AnimationBase|Inherits: AnimationBase]]
+* [[#Attributes|Child: endHeight]]
+* [[#Attributes|Child: endWidth]]
+* [[#Attributes|Child: startHeight]]
+* [[#Attributes|Child: startWidth]]
+
+
+===Slider===
+* [[#Control|Inherits: Control]]
+* [[#BackgroundBottom|Child: BackgroundBottom]]
+* [[#BackgroundMiddle|Child: BackgroundMiddle]]
+* [[#BackgroundTop|Child: BackgroundTop]]
+* [[#Limits|Child: Limits]]
+* [[#OnEnabledStateChanged|Child: OnEnabledStateChanged]]
+* [[#OnSliderReleased|Child: OnSliderReleased]]
+* [[#OnValueChanged|Child: OnValueChanged]]
+* [[#ThumbTexture|Child: ThumbTexture]]
+* [[#Attributes|Child: dragFromThumb]]
+* [[#Attributes|Child: orientation]]
+* [[#Attributes|Child: step]]
+
+
+===StatusBar===
+* [[#Control|Inherits: Control]]
+* [[#LeadingEdge|Child: LeadingEdge]]
+* [[#LeadingEdgeTextureCoords|Child: LeadingEdgeTextureCoords]]
+* [[#Limits|Child: Limits]]
+* [[#OnMinMaxValueChanged|Child: OnMinMaxValueChanged]]
+* [[#OnValueChanged|Child: OnValueChanged]]
+* [[#ScrollingOverlay|Child: ScrollingOverlay]]
+* [[#TextureCoords|Child: TextureCoords]]
+* [[#Attributes|Child: barAlignment]]
+* [[#Attributes|Child: color]]
+* [[#Attributes|Child: enableFadeOut]]
+* [[#Attributes|Child: fadeOutGainColor]]
+* [[#Attributes|Child: fadeOutLossColor]]
+* [[#Attributes|Child: fadeOutTextureFile]]
+* [[#Attributes|Child: orientation]]
+* [[#Attributes|Child: textureFile]]
+
+
+===String===
+* ''attribute:'' '''string''' ''name''
+* ''attribute:'' '''string''' ''value''
+
+
+===Surface===
+* ''attribute:'' '''number''' ''texCoordLeft''
+* ''attribute:'' '''number''' ''texCoordRight''
+* ''attribute:'' '''number''' ''texCoordTop''
+* ''attribute:'' '''number''' ''texCoordBottom''
+* ''attribute:'' '''number''' ''insetLeft''
+* ''attribute:'' '''number''' ''insetRight''
+* ''attribute:'' '''number''' ''insetTop''
+* ''attribute:'' '''number''' ''insetBottom''
+* ''attribute:'' '''string''' ''color''
+
+
+===TextBuffer===
+* [[#Control|Inherits: Control]]
+* [[#LineFade|Child: LineFade]]
+* [[#OnLinkClicked|Child: OnLinkClicked]]
+* [[#OnLinkMouseUp|Child: OnLinkMouseUp]]
+* [[#Attributes|Child: color]]
+* [[#Attributes|Child: drawLastEntryIfOutOfRoom]]
+* [[#Attributes|Child: font]]
+* [[#Attributes|Child: horizontalAlignment]]
+* [[#Attributes|Child: linkEnabled]]
+* [[#Attributes|Child: maxHistoryLines]]
+* [[#Attributes|Child: splitLongMessages]]
+
+
+===Texture===
+* [[#Control|Inherits: Control]]
+* [[#LocalDimensions3D|Child: LocalDimensions3D]]
+* [[#OnTextureLoaded|Child: OnTextureLoaded]]
+* [[#TextureCoords|Child: TextureCoords]]
+* [[#TextureSampleProcessingWeight|Child: TextureSampleProcessingWeight]]
+* [[#Attributes|Child: addressMode]]
+* [[#Attributes|Child: autoAdjustTextureCoords]]
+* [[#Attributes|Child: blendMode]]
+* [[#Attributes|Child: color]]
+* [[#Attributes|Child: desaturation]]
+* [[#Attributes|Child: pixelRoundingEnabled]]
+* [[#Attributes|Child: resizeToFitFile]]
+* [[#Attributes|Child: shaderEffectType]]
+* [[#Attributes|Child: textureCoordsRotation]]
+* [[#Attributes|Child: textureFile]]
+* [[#Attributes|Child: textureFileReleaseOption]]
+
+
+===TextureAnimation===
+* [[#AnimationBase|Inherits: AnimationBase]]
+* [[#Attributes|Child: cellsHigh]]
+* [[#Attributes|Child: cellsWide]]
+* [[#Attributes|Child: framerate]]
+* [[#Attributes|Child: mirrorAlongX]]
+* [[#Attributes|Child: mirrorAlongY]]
+
+
+===TextureComposite===
+* [[#Control|Inherits: Control]]
+* [[#Surface|Child: Surface]]
+* [[#Attributes|Child: blendMode]]
+* [[#Attributes|Child: pixelRoundingEnabled]]
+* [[#Attributes|Child: textureFile]]
+* [[#Attributes|Child: textureFileReleaseOption]]
+
+
+===TextureCoords===
+* ''attribute:'' '''number''' ''left''
+* ''attribute:'' '''number''' ''right''
+* ''attribute:'' '''number''' ''top''
+* ''attribute:'' '''number''' ''bottom''
+
+
+===TextureRotateAnimation===
+* [[#AnimationBase|Inherits: AnimationBase]]
+* [[#Attributes|Child: endRotation]]
+* [[#Attributes|Child: startRotation]]
+
+
+===TextureSampleProcessingWeight===
+* ''attribute:'' '''[[Globals#TextureSampleProcessing|TextureSampleProcessing]]''' ''type''
+* ''attribute:'' '''number''' ''weight''
+
+
+===Textures===
+* [[#Attributes|Child: disabled]]
+* [[#Attributes|Child: disabledPressed]]
+* [[#Attributes|Child: mouseOver]]
+* [[#Attributes|Child: normal]]
+* [[#Attributes|Child: pressed]]
+* [[#Attributes|Child: pressedMouseOver]]
+
+
+===ThumbTexture===
+* ''attribute:'' '''string''' ''textureFile''
+* ''attribute:'' '''string''' ''disabledTextureFile''
+* ''attribute:'' '''string''' ''highlightedTextureFile''
+* ''attribute:'' '''number''' ''thumbWidth''
+* ''attribute:'' '''number''' ''thumbHeight''
+* ''attribute:'' '''number''' ''left''
+* ''attribute:'' '''number''' ''top''
+* ''attribute:'' '''number''' ''bottom''
+* ''attribute:'' '''number''' ''right''
+* ''attribute:'' '''boolean''' ''flushWithSliderExtents''
+
+
+===Tooltip===
+* [[#Control|Inherits: Control]]
+* [[#OnAddGameData|Child: OnAddGameData]]
+* [[#OnCleared|Child: OnCleared]]
+* [[#Attributes|Child: font]]
+* [[#Attributes|Child: headerRowSpacing]]
+* [[#Attributes|Child: headerVerticalOffset]]
+
+
+===TopLevelControl===
+* [[#Control|Inherits: Control]]
+* [[#Attributes|Child: allowBringToTop]]
+* [[#Attributes|Child: topmost]]
+
+
+===Translate3DAnimation===
+* [[#AnimationBase|Inherits: AnimationBase]]
+* [[#Attributes|Child: deltaX]]
+* [[#Attributes|Child: deltaXFromEnd]]
+* [[#Attributes|Child: deltaY]]
+* [[#Attributes|Child: deltaYFromEnd]]
+* [[#Attributes|Child: deltaZ]]
+* [[#Attributes|Child: deltaZFromEnd]]
+* [[#Attributes|Child: endX]]
+* [[#Attributes|Child: endY]]
+* [[#Attributes|Child: endZ]]
+* [[#Attributes|Child: startX]]
+* [[#Attributes|Child: startY]]
+* [[#Attributes|Child: startZ]]
+
+
+===TranslateAnimation===
+* [[#AnimationBase|Inherits: AnimationBase]]
+* [[#Attributes|Child: anchorIndex]]
+* [[#Attributes|Child: deltaX]]
+* [[#Attributes|Child: deltaXFromEnd]]
+* [[#Attributes|Child: deltaY]]
+* [[#Attributes|Child: deltaYFromEnd]]
+* [[#Attributes|Child: endX]]
+* [[#Attributes|Child: endY]]
+* [[#Attributes|Child: startX]]
+* [[#Attributes|Child: startY]]
+
+
+===UpdateFunction===
+* [[#OnSetUpdateFunction|Inherits: OnSetUpdateFunction]]
+* '''ScriptArguments:''' ''local self, progress = ...''
+
+
+===sentinel_element===
+
+

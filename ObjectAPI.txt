@@ -1,0 +1,1797 @@
+===AddOnManager===
+* {{GitHubSearch|Search=AddRelevantFilter}} [[AddRelevantFilter]]('''string''' ''relevantFilter'')
+
+* {{GitHubSearch|Search=GetAddOnDependencyInfo}} [[GetAddOnDependencyInfo]]('''number''' ''addOnIndex'', '''number''' ''addOnDependencyIndex'')
+** '''Returns:''' '''string''' ''name'', '''boolean''' ''active''
+
+* {{GitHubSearch|Search=GetAddOnFilter}} [[GetAddOnFilter]]()
+** '''Returns:''' '''string''' ''settingFilter''
+
+* {{GitHubSearch|Search=GetAddOnInfo}} [[GetAddOnInfo]]('''number''' ''addOnIndex'')
+** '''Returns:''' '''string''' ''name'', '''string''' ''title'', '''string''' ''author'', '''string''' ''description'', '''boolean''' ''enabled'', '''number''' [[Globals#AddOnLoadState|AddOnLoadState]] ''state'', '''boolean''' ''isOutOfDate''
+
+* {{GitHubSearch|Search=GetAddOnNumDependencies}} [[GetAddOnNumDependencies]]('''number''' ''addOnIndex'')
+** '''Returns:''' '''number''' ''numDependencies''
+
+* {{GitHubSearch|Search=GetAddOnRootDirectoryPath}} [[GetAddOnRootDirectoryPath]]('''number''' ''addOnIndex'')
+** '''Returns:''' '''string''' ''directoryPath''
+
+* {{GitHubSearch|Search=GetAddOnVersion}} [[GetAddOnVersion]]('''number''' ''addOnIndex'')
+** '''Returns:''' '''number''' ''version''
+
+* {{GitHubSearch|Search=GetLoadOutOfDateAddOns}} [[GetLoadOutOfDateAddOns]]()
+** '''Returns:''' '''boolean''' ''loadOutOfDateAddons''
+
+* {{GitHubSearch|Search=GetNumAddOns}} [[GetNumAddOns]]()
+** '''Returns:''' '''number''' ''numAddOns''
+
+* {{GitHubSearch|Search=RemoveAddOnFilter}} [[RemoveAddOnFilter]]()
+
+* {{GitHubSearch|Search=RequestAddOnSavedVariablesPrioritySave}} [[RequestAddOnSavedVariablesPrioritySave]]('''string''' ''addOnName'')
+
+* {{GitHubSearch|Search=ResetRelevantFilters}} [[ResetRelevantFilters]]()
+
+* {{GitHubSearch|Search=SetAddOnEnabled}} [[SetAddOnEnabled]]('''number''' ''addOnIndex'', '''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=SetAddOnFilter}} [[SetAddOnFilter]]('''string''' ''settingFilter'')
+
+* {{GitHubSearch|Search=SetLoadOutOfDateAddOns}} [[SetLoadOutOfDateAddOns]]('''boolean''' ''loadOutOfDateAddons'')
+
+
+===AnimationManager===
+* {{GitHubSearch|Search=CreateTimeline}} [[CreateTimeline]]()
+** '''Returns:''' '''object''' ''timeline''
+
+* {{GitHubSearch|Search=CreateTimelineFromVirtual}} [[CreateTimelineFromVirtual]]('''string''' ''timelineName'', '''object''' ''animatedControl'')
+** '''Returns:''' '''object''' ''timeline''
+
+
+===AnimationObject===
+Objects that inherit behavior from '''AnimationObject'''
+* [[Controls#AnimationObject3DRotate|AnimationObject3DRotate]]
+* [[Controls#AnimationObject3DTranslate|AnimationObject3DTranslate]]
+* [[Controls#AnimationObjectAlpha|AnimationObjectAlpha]]
+* [[Controls#AnimationObjectColor|AnimationObjectColor]]
+* [[Controls#AnimationObjectCustom|AnimationObjectCustom]]
+* [[Controls#AnimationObjectScale|AnimationObjectScale]]
+* [[Controls#AnimationObjectScroll|AnimationObjectScroll]]
+* [[Controls#AnimationObjectSize|AnimationObjectSize]]
+* [[Controls#AnimationObjectTexture|AnimationObjectTexture]]
+* [[Controls#AnimationObjectTextureRotate|AnimationObjectTextureRotate]]
+* [[Controls#AnimationObjectTextureSlide|AnimationObjectTextureSlide]]
+* [[Controls#AnimationObjectTranslate|AnimationObjectTranslate]]
+
+
+* {{GitHubSearch|Search=GetAnimatedControl}} [[GetAnimatedControl]]()
+** '''Returns:''' '''object''' ''animatedControl''
+
+* {{GitHubSearch|Search=GetApplyToChildControlName}} [[GetApplyToChildControlName]]()
+** '''Returns:''' '''string''' ''applyToChildControlName''
+
+* {{GitHubSearch|Search=GetDuration}} [[GetDuration]]()
+** '''Returns:''' '''number''' ''durationMs''
+
+* {{GitHubSearch|Search=GetEasingFunction}} [[GetEasingFunction]]()
+** '''Returns:''' '''function''' ''functionRef''
+
+* {{GitHubSearch|Search=GetHandler}} [[GetHandler]]('''string''' ''EventName'')
+** '''Returns:''' '''function''' ''FunctionRef''
+
+* {{GitHubSearch|Search=GetTimeline}} [[GetTimeline]]()
+** '''Returns:''' '''object''' ''owningTimeline''
+
+* {{GitHubSearch|Search=IsEnabled}} [[IsEnabled]]()
+** '''Returns:''' '''boolean''' ''isEnabled''
+
+* {{GitHubSearch|Search=IsPlaying}} [[IsPlaying]]()
+** '''Returns:''' '''boolean''' ''isPlaying''
+
+* {{GitHubSearch|Search=SetAnimatedControl}} [[SetAnimatedControl]]('''object''' ''animatedControl'')
+
+* {{GitHubSearch|Search=SetApplyToChildControlName}} [[SetApplyToChildControlName]]('''string''' ''applyToChildControlName'')
+
+* {{GitHubSearch|Search=SetDuration}} [[SetDuration]]('''number''' ''durationMs'')
+
+* {{GitHubSearch|Search=SetEasingFunction}} [[SetEasingFunction]]('''function''' ''functionRef'')
+
+* {{GitHubSearch|Search=SetEnabled}} [[SetEnabled]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=SetHandler}} [[SetHandler]]('''string''' ''EventName'', '''function''' ''FunctionRef'')
+
+
+===AnimationObject3DRotate===
+* {{GitHubSearch|Search=GetEndPitch}} [[GetEndPitch]]()
+** '''Returns:''' '''number''' ''endPitchRadians''
+
+* {{GitHubSearch|Search=GetEndRoll}} [[GetEndRoll]]()
+** '''Returns:''' '''number''' ''endRollRadians''
+
+* {{GitHubSearch|Search=GetEndYaw}} [[GetEndYaw]]()
+** '''Returns:''' '''number''' ''endYawRadians''
+
+* {{GitHubSearch|Search=GetStartPitch}} [[GetStartPitch]]()
+** '''Returns:''' '''number''' ''startPitchRadians''
+
+* {{GitHubSearch|Search=GetStartRoll}} [[GetStartRoll]]()
+** '''Returns:''' '''number''' ''startRollRadians''
+
+* {{GitHubSearch|Search=GetStartYaw}} [[GetStartYaw]]()
+** '''Returns:''' '''number''' ''startYawRadians''
+
+* {{GitHubSearch|Search=SetEndPitch}} [[SetEndPitch]]('''number''' ''endPitchRadians'')
+
+* {{GitHubSearch|Search=SetEndRoll}} [[SetEndRoll]]('''number''' ''endRollRadians'')
+
+* {{GitHubSearch|Search=SetEndYaw}} [[SetEndYaw]]('''number''' ''endYawRadians'')
+
+* {{GitHubSearch|Search=SetRotationValues}} [[SetRotationValues]]('''number''' ''startPitchRadians'', '''number''' ''startYawRadians'', '''number''' ''startRollRadians'', '''number''' ''endPitchRadians'', '''number''' ''endYawRadians'', '''number''' ''endRollRadians'')
+
+* {{GitHubSearch|Search=SetStartPitch}} [[SetStartPitch]]('''number''' ''startPitchRadians'')
+
+* {{GitHubSearch|Search=SetStartRoll}} [[SetStartRoll]]('''number''' ''startRollRadians'')
+
+* {{GitHubSearch|Search=SetStartYaw}} [[SetStartYaw]]('''number''' ''startYawRadians'')
+
+
+===AnimationObject3DTranslate===
+* {{GitHubSearch|Search=ClearBezierControlPoints}} [[ClearBezierControlPoints]]()
+
+* {{GitHubSearch|Search=GetDeltaOffsetX}} [[GetDeltaOffsetX]]()
+** '''Returns:''' '''number''' ''deltaX''
+
+* {{GitHubSearch|Search=GetDeltaOffsetY}} [[GetDeltaOffsetY]]()
+** '''Returns:''' '''number''' ''deltaY''
+
+* {{GitHubSearch|Search=GetDeltaOffsetZ}} [[GetDeltaOffsetZ]]()
+** '''Returns:''' '''number''' ''deltaZ''
+
+* {{GitHubSearch|Search=GetEndOffsetX}} [[GetEndOffsetX]]()
+** '''Returns:''' '''number''' ''endX''
+
+* {{GitHubSearch|Search=GetEndOffsetY}} [[GetEndOffsetY]]()
+** '''Returns:''' '''number''' ''endY''
+
+* {{GitHubSearch|Search=GetEndOffsetZ}} [[GetEndOffsetZ]]()
+** '''Returns:''' '''number''' ''endZ''
+
+* {{GitHubSearch|Search=GetStartOffsetX}} [[GetStartOffsetX]]()
+** '''Returns:''' '''number''' ''startX''
+
+* {{GitHubSearch|Search=GetStartOffsetY}} [[GetStartOffsetY]]()
+** '''Returns:''' '''number''' ''startY''
+
+* {{GitHubSearch|Search=GetStartOffsetZ}} [[GetStartOffsetZ]]()
+** '''Returns:''' '''number''' ''startZ''
+
+* {{GitHubSearch|Search=GetTranslateDeltas}} [[GetTranslateDeltas]]()
+** '''Returns:''' '''number''' ''deltaX'', '''number''' ''deltaY'', '''number''' ''deltaZ''
+
+* {{GitHubSearch|Search=SetBezierControlPoint}} [[SetBezierControlPoint]]('''number''' ''index'', '''number''' ''x'', '''number''' ''y'', '''number''' ''z'')
+
+* {{GitHubSearch|Search=SetDeltaOffsetX}} [[SetDeltaOffsetX]]('''number''' ''deltaX'', '''number''' [[Globals#TranslateAnimationDeltaType|TranslateAnimationDeltaType]] ''translateAnimationDeltaType'')
+
+* {{GitHubSearch|Search=SetDeltaOffsetY}} [[SetDeltaOffsetY]]('''number''' ''deltaY'', '''number''' [[Globals#TranslateAnimationDeltaType|TranslateAnimationDeltaType]] ''translateAnimationDeltaType'')
+
+* {{GitHubSearch|Search=SetDeltaOffsetZ}} [[SetDeltaOffsetZ]]('''number''' ''deltaZ'', '''number''' [[Globals#TranslateAnimationDeltaType|TranslateAnimationDeltaType]] ''translateAnimationDeltaType'')
+
+* {{GitHubSearch|Search=SetEndOffsetX}} [[SetEndOffsetX]]('''number''' ''endX'')
+
+* {{GitHubSearch|Search=SetEndOffsetY}} [[SetEndOffsetY]]('''number''' ''endY'')
+
+* {{GitHubSearch|Search=SetEndOffsetZ}} [[SetEndOffsetZ]]('''number''' ''endZ'')
+
+* {{GitHubSearch|Search=SetStartOffsetX}} [[SetStartOffsetX]]('''number''' ''startX'')
+
+* {{GitHubSearch|Search=SetStartOffsetY}} [[SetStartOffsetY]]('''number''' ''startY'')
+
+* {{GitHubSearch|Search=SetStartOffsetZ}} [[SetStartOffsetZ]]('''number''' ''startZ'')
+
+* {{GitHubSearch|Search=SetTranslateDeltas}} [[SetTranslateDeltas]]('''number''' ''deltaX'', '''number''' ''deltaY'', '''number''' ''deltaZ'', '''number''' [[Globals#TranslateAnimationDeltaType|TranslateAnimationDeltaType]] ''translateAnimationDeltaType'')
+
+* {{GitHubSearch|Search=SetTranslateOffsets}} [[SetTranslateOffsets]]('''number''' ''startX'', '''number''' ''startY'', '''number''' ''startZ'', '''number''' ''endX'', '''number''' ''endY'', '''number''' ''endZ'')
+
+
+===AnimationObjectAlpha===
+* {{GitHubSearch|Search=GetEndAlpha}} [[GetEndAlpha]]()
+** '''Returns:''' '''number''' ''endAlpha''
+
+* {{GitHubSearch|Search=GetStartAlpha}} [[GetStartAlpha]]()
+** '''Returns:''' '''number''' ''startAlpha''
+
+* {{GitHubSearch|Search=SetAlphaValues}} [[SetAlphaValues]]('''number''' ''startAlpha'', '''number''' ''endAlpha'')
+
+* {{GitHubSearch|Search=SetEndAlpha}} [[SetEndAlpha]]('''number''' ''endAlpha'')
+
+* {{GitHubSearch|Search=SetStartAlpha}} [[SetStartAlpha]]('''number''' ''startAlpha'')
+
+
+===AnimationObjectColor===
+* {{GitHubSearch|Search=GetApplyAlpha}} [[GetApplyAlpha]]()
+** '''Returns:''' '''boolean''' ''applyAlpha''
+
+* {{GitHubSearch|Search=GetEndColor}} [[GetEndColor]]()
+** '''Returns:''' '''number''' ''endR'', '''number''' ''endG'', '''number''' ''endB'', '''number''' ''endA''
+
+* {{GitHubSearch|Search=GetStartColor}} [[GetStartColor]]()
+** '''Returns:''' '''number''' ''startR'', '''number''' ''startG'', '''number''' ''startB'', '''number''' ''startA''
+
+* {{GitHubSearch|Search=SetApplyAlpha}} [[SetApplyAlpha]]('''boolean''' ''applyAlpha'')
+
+* {{GitHubSearch|Search=SetColorValues}} [[SetColorValues]]('''number''' ''startR'', '''number''' ''startG'', '''number''' ''startB'', '''number''' ''startA'', '''number''' ''endR'', '''number''' ''endG'', '''number''' ''endB'', '''number''' ''endA'')
+
+* {{GitHubSearch|Search=SetEndColor}} [[SetEndColor]]('''number''' ''endR'', '''number''' ''endG'', '''number''' ''endB'', '''number''' ''endA'')
+
+* {{GitHubSearch|Search=SetStartColor}} [[SetStartColor]]('''number''' ''startR'', '''number''' ''startG'', '''number''' ''startB'', '''number''' ''startA'')
+
+
+===AnimationObjectCustom===
+* {{GitHubSearch|Search=SetUpdateFunction}} [[SetUpdateFunction]]('''function''' ''functionRef'')
+
+
+===AnimationObjectScale===
+* {{GitHubSearch|Search=GetEndScale}} [[GetEndScale]]()
+** '''Returns:''' '''number''' ''endScale''
+
+* {{GitHubSearch|Search=GetStartScale}} [[GetStartScale]]()
+** '''Returns:''' '''number''' ''startScale''
+
+* {{GitHubSearch|Search=SetEndScale}} [[SetEndScale]]('''number''' ''endScale'')
+
+* {{GitHubSearch|Search=SetScaleValues}} [[SetScaleValues]]('''number''' ''startScale'', '''number''' ''endScale'')
+
+* {{GitHubSearch|Search=SetStartScale}} [[SetStartScale]]('''number''' ''startScale'')
+
+
+===AnimationObjectScroll===
+* {{GitHubSearch|Search=SetHorizontalEnd}} [[SetHorizontalEnd]]('''number''' ''endX'')
+
+* {{GitHubSearch|Search=SetHorizontalRelative}} [[SetHorizontalRelative]]('''number''' ''offsetX'')
+
+* {{GitHubSearch|Search=SetHorizontalStartAndEnd}} [[SetHorizontalStartAndEnd]]('''number''' ''startX'', '''number''' ''endX'')
+
+* {{GitHubSearch|Search=SetVerticalEnd}} [[SetVerticalEnd]]('''number''' ''endY'')
+
+* {{GitHubSearch|Search=SetVerticalRelative}} [[SetVerticalRelative]]('''number''' ''offsetY'')
+
+* {{GitHubSearch|Search=SetVerticalStartAndEnd}} [[SetVerticalStartAndEnd]]('''number''' ''startY'', '''number''' ''endY'')
+
+
+===AnimationObjectSize===
+* {{GitHubSearch|Search=SetEndHeight}} [[SetEndHeight]]('''number''' ''endHeight'')
+
+* {{GitHubSearch|Search=SetEndWidth}} [[SetEndWidth]]('''number''' ''endWidth'')
+
+* {{GitHubSearch|Search=SetStartAndEndHeight}} [[SetStartAndEndHeight]]('''number''' ''startHeight'', '''number''' ''endHeight'')
+
+* {{GitHubSearch|Search=SetStartAndEndWidth}} [[SetStartAndEndWidth]]('''number''' ''startWidth'', '''number''' ''endWidth'')
+
+* {{GitHubSearch|Search=SetStartHeight}} [[SetStartHeight]]('''number''' ''startHeight'')
+
+* {{GitHubSearch|Search=SetStartWidth}} [[SetStartWidth]]('''number''' ''startWidth'')
+
+
+===AnimationObjectTexture===
+* {{GitHubSearch|Search=GetCellsHigh}} [[GetCellsHigh]]()
+** '''Returns:''' '''number''' ''aNumCellsHigh''
+
+* {{GitHubSearch|Search=GetCellsWide}} [[GetCellsWide]]()
+** '''Returns:''' '''number''' ''aNumCellsWide''
+
+* {{GitHubSearch|Search=IsMirroringAlongX}} [[IsMirroringAlongX]]()
+** '''Returns:''' '''boolean''' ''mirroring''
+
+* {{GitHubSearch|Search=IsMirroringAlongY}} [[IsMirroringAlongY]]()
+** '''Returns:''' '''boolean''' ''mirroring''
+
+* {{GitHubSearch|Search=SetCellsHigh}} [[SetCellsHigh]]('''number''' ''aNumCellsHigh'')
+
+* {{GitHubSearch|Search=SetCellsWide}} [[SetCellsWide]]('''number''' ''aNumCellsWide'')
+
+* {{GitHubSearch|Search=SetFramerate}} [[SetFramerate]]('''number''' ''framesPerSecond'')
+
+* {{GitHubSearch|Search=SetImageData}} [[SetImageData]]('''number''' ''aNumCellsWide'', '''number''' ''aNumCellsHigh'')
+
+* {{GitHubSearch|Search=SetMirrorAlongX}} [[SetMirrorAlongX]]('''boolean''' ''mirroring'')
+
+* {{GitHubSearch|Search=SetMirrorAlongY}} [[SetMirrorAlongY]]('''boolean''' ''mirroring'')
+
+
+===AnimationObjectTextureRotate===
+* {{GitHubSearch|Search=GetEndRotation}} [[GetEndRotation]]()
+** '''Returns:''' '''number''' ''endRadians''
+
+* {{GitHubSearch|Search=GetStartRotation}} [[GetStartRotation]]()
+** '''Returns:''' '''number''' ''startRadians''
+
+* {{GitHubSearch|Search=SetEndRotation}} [[SetEndRotation]]('''number''' ''endRadians'')
+
+* {{GitHubSearch|Search=SetRotationValues}} [[SetRotationValues]]('''number''' ''startRadians'', '''number''' ''endRadians'')
+
+* {{GitHubSearch|Search=SetStartRotation}} [[SetStartRotation]]('''number''' ''startRadians'')
+
+
+===AnimationObjectTextureSlide===
+* {{GitHubSearch|Search=SetSlideDistances}} [[SetSlideDistances]]('''number''' ''slideDistanceU'', '''number''' ''slideDistanceV'')
+
+
+===AnimationObjectTranslate===
+* {{GitHubSearch|Search=GetAnchorIndex}} [[GetAnchorIndex]]()
+** '''Returns:''' '''number''' ''anchorIndex''
+
+* {{GitHubSearch|Search=GetDeltaOffsetX}} [[GetDeltaOffsetX]]()
+** '''Returns:''' '''number''' ''deltaX''
+
+* {{GitHubSearch|Search=GetDeltaOffsetY}} [[GetDeltaOffsetY]]()
+** '''Returns:''' '''number''' ''deltaY''
+
+* {{GitHubSearch|Search=GetEndOffsetX}} [[GetEndOffsetX]]()
+** '''Returns:''' '''number''' ''endX''
+
+* {{GitHubSearch|Search=GetEndOffsetY}} [[GetEndOffsetY]]()
+** '''Returns:''' '''number''' ''endY''
+
+* {{GitHubSearch|Search=GetStartOffsetX}} [[GetStartOffsetX]]()
+** '''Returns:''' '''number''' ''startX''
+
+* {{GitHubSearch|Search=GetStartOffsetY}} [[GetStartOffsetY]]()
+** '''Returns:''' '''number''' ''startY''
+
+* {{GitHubSearch|Search=GetTranslateDeltas}} [[GetTranslateDeltas]]()
+** '''Returns:''' '''number''' ''deltaX'', '''number''' ''deltaY''
+
+* {{GitHubSearch|Search=SetAnchorIndex}} [[SetAnchorIndex]]('''number''' ''anchorIndex'')
+
+* {{GitHubSearch|Search=SetDeltaOffsetX}} [[SetDeltaOffsetX]]('''number''' ''deltaX'', '''number''' [[Globals#TranslateAnimationDeltaType|TranslateAnimationDeltaType]] ''translateAnimationDeltaType'')
+
+* {{GitHubSearch|Search=SetDeltaOffsetY}} [[SetDeltaOffsetY]]('''number''' ''deltaY'', '''number''' [[Globals#TranslateAnimationDeltaType|TranslateAnimationDeltaType]] ''translateAnimationDeltaType'')
+
+* {{GitHubSearch|Search=SetEndOffsetX}} [[SetEndOffsetX]]('''number''' ''endX'')
+
+* {{GitHubSearch|Search=SetEndOffsetY}} [[SetEndOffsetY]]('''number''' ''endY'')
+
+* {{GitHubSearch|Search=SetStartOffsetX}} [[SetStartOffsetX]]('''number''' ''startX'')
+
+* {{GitHubSearch|Search=SetStartOffsetY}} [[SetStartOffsetY]]('''number''' ''startY'')
+
+* {{GitHubSearch|Search=SetTranslateDeltas}} [[SetTranslateDeltas]]('''number''' ''deltaX'', '''number''' ''deltaY'', '''number''' [[Globals#TranslateAnimationDeltaType|TranslateAnimationDeltaType]] ''translateAnimationDeltaType'')
+
+* {{GitHubSearch|Search=SetTranslateOffsets}} [[SetTranslateOffsets]]('''number''' ''startX'', '''number''' ''startY'', '''number''' ''endX'', '''number''' ''endY'')
+
+
+===AnimationTimeline===
+* {{GitHubSearch|Search=ApplyAllAnimationsToControl}} [[ApplyAllAnimationsToControl]]('''object''' ''animatedControl'')
+
+* {{GitHubSearch|Search=ClearAllCallbacks}} [[ClearAllCallbacks]]()
+
+* {{GitHubSearch|Search=GetAnimation}} [[GetAnimation]]('''number''' ''animationIndex'')
+** '''Returns:''' '''object''' ''animation''
+
+* {{GitHubSearch|Search=GetAnimationOffset}} [[GetAnimationOffset]]('''object''' ''animation'')
+** '''Returns:''' '''number''' ''offset''
+
+* {{GitHubSearch|Search=GetAnimationTimeline}} [[GetAnimationTimeline]]('''number''' ''timelineIndex'')
+** '''Returns:''' '''object''' ''timeline''
+
+* {{GitHubSearch|Search=GetAnimationTimelineOffset}} [[GetAnimationTimelineOffset]]('''object''' ''animation'')
+** '''Returns:''' '''number''' ''offset''
+
+* {{GitHubSearch|Search=GetDuration}} [[GetDuration]]()
+** '''Returns:''' '''number''' ''duration''
+
+* {{GitHubSearch|Search=GetFirstAnimation}} [[GetFirstAnimation]]()
+** '''Returns:''' '''object''' ''animation''
+
+* {{GitHubSearch|Search=GetFirstAnimationOfType}} [[GetFirstAnimationOfType]]('''number''' [[Globals#AnimationType|AnimationType]] ''animationType'')
+** '''Returns:''' '''object''' ''animation''
+
+* {{GitHubSearch|Search=GetFirstAnimationTimeline}} [[GetFirstAnimationTimeline]]()
+** '''Returns:''' '''object''' ''timeline''
+
+* {{GitHubSearch|Search=GetFullProgress}} [[GetFullProgress]]()
+** '''Returns:''' '''number''' ''progress''
+
+* {{GitHubSearch|Search=GetHandler}} [[GetHandler]]('''string''' ''EventName'')
+** '''Returns:''' '''function''' ''FunctionRef''
+
+* {{GitHubSearch|Search=GetLastAnimation}} [[GetLastAnimation]]()
+** '''Returns:''' '''object''' ''animation''
+
+* {{GitHubSearch|Search=GetLastAnimationTimeline}} [[GetLastAnimationTimeline]]()
+** '''Returns:''' '''object''' ''timeline''
+
+* {{GitHubSearch|Search=GetMinDuration}} [[GetMinDuration]]()
+** '''Returns:''' '''number''' ''minDuration''
+
+* {{GitHubSearch|Search=GetNumAnimationTimelines}} [[GetNumAnimationTimelines]]()
+** '''Returns:''' '''number''' ''numTimelines''
+
+* {{GitHubSearch|Search=GetNumAnimations}} [[GetNumAnimations]]()
+** '''Returns:''' '''number''' ''numAnimations''
+
+* {{GitHubSearch|Search=GetParent}} [[GetParent]]()
+** '''Returns:''' '''object''' ''timeline''
+
+* {{GitHubSearch|Search=GetPlaybackLoopsRemaining}} [[GetPlaybackLoopsRemaining]]()
+** '''Returns:''' '''number''' ''loopsRemaining''
+
+* {{GitHubSearch|Search=GetProgress}} [[GetProgress]]()
+** '''Returns:''' '''number''' ''progress''
+
+* {{GitHubSearch|Search=GetSkipAnimationsBehindPlayheadOnInitialPlay}} [[GetSkipAnimationsBehindPlayheadOnInitialPlay]]()
+** '''Returns:''' '''boolean''' ''skipAnimations''
+
+* {{GitHubSearch|Search=InsertAnimation}} [[InsertAnimation]]('''number''' ''animationType'', '''object''' ''animatedControl'', '''number''' ''offset'')
+** '''Returns:''' '''object''' ''animation''
+
+* {{GitHubSearch|Search=InsertAnimationFromVirtual}} [[InsertAnimationFromVirtual]]('''string''' ''animationVirtualName'', '''object''' ''animatedControl'')
+** '''Returns:''' '''object''' ''animation''
+
+* {{GitHubSearch|Search=InsertAnimationTimeline}} [[InsertAnimationTimeline]]('''number''' ''offset'', '''object''' ''animatedControl'')
+** '''Returns:''' '''object''' ''animation''
+
+* {{GitHubSearch|Search=InsertAnimationTimelineFromVirtual}} [[InsertAnimationTimelineFromVirtual]]('''string''' ''animationVirtualName'', '''object''' ''animatedControl'')
+** '''Returns:''' '''object''' ''animation''
+
+* {{GitHubSearch|Search=InsertCallback}} [[InsertCallback]]('''function''' ''functionRef'', '''number''' ''offset'')
+** '''Returns:''' '''function''' ''functionRefRet''
+
+* {{GitHubSearch|Search=IsEnabled}} [[IsEnabled]]()
+** '''Returns:''' '''boolean''' ''isEnabled''
+
+* {{GitHubSearch|Search=IsPaused}} [[IsPaused]]()
+** '''Returns:''' '''boolean''' ''isPaused''
+
+* {{GitHubSearch|Search=IsPlaying}} [[IsPlaying]]()
+** '''Returns:''' '''boolean''' ''isPlaying''
+
+* {{GitHubSearch|Search=IsPlayingBackward}} [[IsPlayingBackward]]()
+** '''Returns:''' '''boolean''' ''reversed''
+
+* {{GitHubSearch|Search=Pause}} [[Pause]]()
+
+* {{GitHubSearch|Search=PlayBackward}} [[PlayBackward]]()
+
+* {{GitHubSearch|Search=PlayForward}} [[PlayForward]]()
+
+* {{GitHubSearch|Search=PlayFromEnd}} [[PlayFromEnd]]('''number''' ''offsetMs'')
+
+* {{GitHubSearch|Search=PlayFromStart}} [[PlayFromStart]]('''number''' ''offsetMs'')
+
+* {{GitHubSearch|Search=PlayInstantlyToEnd}} [[PlayInstantlyToEnd]]()
+
+* {{GitHubSearch|Search=PlayInstantlyToStart}} [[PlayInstantlyToStart]]()
+
+* {{GitHubSearch|Search=Resume}} [[Resume]]()
+
+* {{GitHubSearch|Search=SetAllAnimationOffsets}} [[SetAllAnimationOffsets]]('''number''' ''offset'')
+
+* {{GitHubSearch|Search=SetAnimationOffset}} [[SetAnimationOffset]]('''object''' ''animation'', '''number''' ''offset'')
+
+* {{GitHubSearch|Search=SetAnimationTimelineOffset}} [[SetAnimationTimelineOffset]]('''object''' ''animation'', '''number''' ''offset'')
+
+* {{GitHubSearch|Search=SetCallbackOffset}} [[SetCallbackOffset]]('''function''' ''callback'', '''number''' ''offset'')
+
+* {{GitHubSearch|Search=SetEnabled}} [[SetEnabled]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=SetHandler}} [[SetHandler]]('''string''' ''EventName'', '''function''' ''FunctionRef'')
+
+* {{GitHubSearch|Search=SetMinDuration}} [[SetMinDuration]]('''number''' ''minDuration'')
+
+* {{GitHubSearch|Search=SetPlaybackLoopCount}} [[SetPlaybackLoopCount]]('''number''' ''maxLoopCount'')
+
+* {{GitHubSearch|Search=SetPlaybackLoopsRemaining}} [[SetPlaybackLoopsRemaining]]('''number''' ''loopsRemaining'')
+
+* {{GitHubSearch|Search=SetPlaybackType}} [[SetPlaybackType]]('''number''' ''playbackType'', '''number''' ''maxLoopCount'')
+
+* {{GitHubSearch|Search=SetProgress}} [[SetProgress]]('''number''' ''progress'')
+
+* {{GitHubSearch|Search=SetSkipAnimationsBehindPlayheadOnInitialPlay}} [[SetSkipAnimationsBehindPlayheadOnInitialPlay]]('''boolean''' ''skipAnimations'')
+
+* {{GitHubSearch|Search=Stop}} [[Stop]]()
+
+
+===BackdropControl===
+* {{GitHubSearch|Search=GetCenterColor}} [[GetCenterColor]]()
+** '''Returns:''' '''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a''
+
+* {{GitHubSearch|Search=IsPixelRoundingEnabled}} [[IsPixelRoundingEnabled]]()
+** '''Returns:''' '''boolean''' ''pixelRoundingEnabled''
+
+* {{GitHubSearch|Search=SetCenterColor}} [[SetCenterColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetCenterTexture}} [[SetCenterTexture]]('''string''' ''filename'', '''number''' ''tileSize'', '''number''' ''addressMode'')
+
+* {{GitHubSearch|Search=SetEdgeColor}} [[SetEdgeColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetEdgeTexture}} [[SetEdgeTexture]]('''string''' ''filename'', '''number''' ''edgeFileWidth'', '''number''' ''edgeFileHeight'', '''number''' ''edgeSize'', '''number''' ''edgeFilePadding'')
+
+* {{GitHubSearch|Search=SetInsets}} [[SetInsets]]('''number''' ''left'', '''number''' ''top'', '''number''' ''right'', '''number''' ''bottom'')
+
+* {{GitHubSearch|Search=SetIntegralWrapping}} [[SetIntegralWrapping]]('''boolean''' ''integralWrappingEnabled'')
+
+* {{GitHubSearch|Search=SetPixelRoundingEnabled}} [[SetPixelRoundingEnabled]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=SetTextureReleaseOption}} [[SetTextureReleaseOption]]('''number''' [[Globals#ReleaseReferenceOptions|ReleaseReferenceOptions]] ''releaseOption'')
+
+
+===ButtonControl===
+* {{GitHubSearch|Search=EnableMouseButton}} [[EnableMouseButton]]('''number''' ''buttonNum'', '''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=GetLabelControl}} [[GetLabelControl]]()
+** '''Returns:''' '''object''' ''labelControl''
+
+* {{GitHubSearch|Search=GetState}} [[GetState]]()
+** '''Returns:''' '''number''' ''state''
+
+* {{GitHubSearch|Search=IsPixelRoundingEnabled}} [[IsPixelRoundingEnabled]]()
+** '''Returns:''' '''boolean''' ''pixelRoundingEnabled''
+
+* {{GitHubSearch|Search=SetClickSound}} [[SetClickSound]]('''string''' ''clickSound'')
+
+* {{GitHubSearch|Search=SetDesaturation}} [[SetDesaturation]]('''number''' ''desaturation'')
+
+* {{GitHubSearch|Search=SetDisabledFontColor}} [[SetDisabledFontColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetDisabledPressedFontColor}} [[SetDisabledPressedFontColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetDisabledPressedTexture}} [[SetDisabledPressedTexture]]('''string''' ''textureFilename'')
+
+* {{GitHubSearch|Search=SetDisabledTexture}} [[SetDisabledTexture]]('''string''' ''textureFilename'')
+
+* {{GitHubSearch|Search=SetEnabled}} [[SetEnabled]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=SetEndCapWidth}} [[SetEndCapWidth]]('''number''' ''endCapWidth'')
+
+* {{GitHubSearch|Search=SetFont}} [[SetFont]]('''string''' ''text'')
+
+* {{GitHubSearch|Search=SetHorizontalAlignment}} [[SetHorizontalAlignment]]('''number''' ''horizontalAlign'')
+
+* {{GitHubSearch|Search=SetMouseOverBlendMode}} [[SetMouseOverBlendMode]]('''number''' ''blendMode'')
+
+* {{GitHubSearch|Search=SetMouseOverFontColor}} [[SetMouseOverFontColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetMouseOverTexture}} [[SetMouseOverTexture]]('''string''' ''textureFilename'')
+
+* {{GitHubSearch|Search=SetNormalFontColor}} [[SetNormalFontColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetNormalOffset}} [[SetNormalOffset]]('''number''' ''x'', '''number''' ''y'')
+
+* {{GitHubSearch|Search=SetNormalTexture}} [[SetNormalTexture]]('''string''' ''textureFilename'')
+
+* {{GitHubSearch|Search=SetPixelRoundingEnabled}} [[SetPixelRoundingEnabled]]('''boolean''' ''pixelRoundingEnabled'')
+
+* {{GitHubSearch|Search=SetPressedFontColor}} [[SetPressedFontColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetPressedMouseOverTexture}} [[SetPressedMouseOverTexture]]('''string''' ''textureFilename'')
+
+* {{GitHubSearch|Search=SetPressedOffset}} [[SetPressedOffset]]('''number''' ''x'', '''number''' ''y'')
+
+* {{GitHubSearch|Search=SetPressedTexture}} [[SetPressedTexture]]('''string''' ''textureFilename'')
+
+* {{GitHubSearch|Search=SetShowingHighlight}} [[SetShowingHighlight]]('''boolean''' ''showingHighlight'')
+
+* {{GitHubSearch|Search=SetState}} [[SetState]]('''number''' ''newState'', '''boolean''' ''locked'')
+
+* {{GitHubSearch|Search=SetText}} [[SetText]]('''string''' ''text'')
+
+* {{GitHubSearch|Search=SetTextureCoords}} [[SetTextureCoords]]('''number''' ''left'', '''number''' ''right'', '''number''' ''top'', '''number''' ''bottom'')
+
+* {{GitHubSearch|Search=SetTextureReleaseOption}} [[SetTextureReleaseOption]]('''number''' [[Globals#ReleaseReferenceOptions|ReleaseReferenceOptions]] ''releaseOption'')
+
+* {{GitHubSearch|Search=SetVerticalAlignment}} [[SetVerticalAlignment]]('''number''' ''verticalAlign'')
+
+
+===ColorSelectControl===
+* {{GitHubSearch|Search=GetColorAsHSV}} [[GetColorAsHSV]]()
+** '''Returns:''' '''number''' ''hue'', '''number''' ''saturation'', '''number''' ''value''
+
+* {{GitHubSearch|Search=GetColorAsRGB}} [[GetColorAsRGB]]()
+** '''Returns:''' '''number''' ''red'', '''number''' ''green'', '''number''' ''blue''
+
+* {{GitHubSearch|Search=GetColorWheelTextureControl}} [[GetColorWheelTextureControl]]()
+** '''Returns:''' '''object''' ''textureControl''
+
+* {{GitHubSearch|Search=GetColorWheelThumbTextureControl}} [[GetColorWheelThumbTextureControl]]()
+** '''Returns:''' '''object''' ''textureControl''
+
+* {{GitHubSearch|Search=GetFullValuedColorAsRGB}} [[GetFullValuedColorAsRGB]]()
+** '''Returns:''' '''number''' ''red'', '''number''' ''green'', '''number''' ''blue''
+
+* {{GitHubSearch|Search=GetThumbNormalizedPosition}} [[GetThumbNormalizedPosition]]()
+** '''Returns:''' '''number''' ''normalizedX'', '''number''' ''normalizedY''
+
+* {{GitHubSearch|Search=GetValue}} [[GetValue]]()
+** '''Returns:''' '''number''' ''value''
+
+* {{GitHubSearch|Search=SetColorAsHSV}} [[SetColorAsHSV]]('''number''' ''hue'', '''number''' ''saturation'', '''number''' ''value'')
+
+* {{GitHubSearch|Search=SetColorAsRGB}} [[SetColorAsRGB]]('''number''' ''red'', '''number''' ''green'', '''number''' ''blue'')
+
+* {{GitHubSearch|Search=SetColorWheelThumbTextureControl}} [[SetColorWheelThumbTextureControl]]('''object''' ''textureControl'')
+
+* {{GitHubSearch|Search=SetThumbNormalizedPosition}} [[SetThumbNormalizedPosition]]('''number''' ''normalizedX'', '''number''' ''normalizedY'')
+
+* {{GitHubSearch|Search=SetValue}} [[SetValue]]('''number''' ''value'')
+
+
+===CompassDisplayControl===
+* {{GitHubSearch|Search=GetAlphaCoefficients}} [[GetAlphaCoefficients]]('''number''' [[Globals#MapDisplayPinType|MapDisplayPinType]] ''pinType'')
+** '''Returns:''' '''number''' ''leadingCoefficient'', '''number''' ''coefficient'', '''number''' ''constant''
+
+* {{GitHubSearch|Search=GetCenterOveredPinDescription}} [[GetCenterOveredPinDescription]]('''number''' ''centerOveredPinIndex'')
+** '''Returns:''' '''string''' ''description''
+
+* {{GitHubSearch|Search=GetCenterOveredPinDistance}} [[GetCenterOveredPinDistance]]('''number''' ''centerOveredPinIndex'')
+** '''Returns:''' '''number''' ''distance''
+
+* {{GitHubSearch|Search=GetCenterOveredPinInfo}} [[GetCenterOveredPinInfo]]('''number''' ''centerOveredPinIndex'')
+** '''Returns:''' '''string''' ''description'', '''number''' [[Globals#MapDisplayPinType|MapDisplayPinType]] ''type'', '''number''' ''distance'', '''number''' [[Globals#DrawLayer|DrawLayer]] ''drawLayer'', '''number''' ''drawLevel'', '''boolean''' ''suppressed''
+
+* {{GitHubSearch|Search=GetCenterOveredPinLayerAndLevel}} [[GetCenterOveredPinLayerAndLevel]]('''number''' ''centerOveredPinIndex'')
+** '''Returns:''' '''number''' [[Globals#DrawLayer|DrawLayer]] ''drawLayer'', '''number''' ''drawLevel''
+
+* {{GitHubSearch|Search=GetCenterOveredPinType}} [[GetCenterOveredPinType]]('''number''' ''centerOveredPinIndex'')
+** '''Returns:''' '''number''' [[Globals#MapDisplayPinType|MapDisplayPinType]] ''type''
+
+* {{GitHubSearch|Search=GetMinVisibleAlpha}} [[GetMinVisibleAlpha]]('''number''' [[Globals#MapDisplayPinType|MapDisplayPinType]] ''pinType'')
+** '''Returns:''' '''number''' ''minVisibleAlpha''
+
+* {{GitHubSearch|Search=GetMinVisibleScale}} [[GetMinVisibleScale]]('''number''' [[Globals#MapDisplayPinType|MapDisplayPinType]] ''pinType'')
+** '''Returns:''' '''number''' ''minVisibleScale''
+
+* {{GitHubSearch|Search=GetNumCenterOveredPins}} [[GetNumCenterOveredPins]]()
+** '''Returns:''' '''number''' ''numCenterOveredPins''
+
+* {{GitHubSearch|Search=GetScaleCoefficients}} [[GetScaleCoefficients]]('''number''' [[Globals#MapDisplayPinType|MapDisplayPinType]] ''pinType'')
+** '''Returns:''' '''number''' ''leadingCoefficient'', '''number''' ''coefficient'', '''number''' ''constant''
+
+* {{GitHubSearch|Search=IsCenterOveredPinSuppressed}} [[IsCenterOveredPinSuppressed]]('''number''' ''centerOveredPinIndex'')
+** '''Returns:''' '''boolean''' ''suppressed''
+
+* {{GitHubSearch|Search=SetAlphaCoefficients}} [[SetAlphaCoefficients]]('''number''' [[Globals#MapDisplayPinType|MapDisplayPinType]] ''pinType'', '''number''' ''leadingCoefficient'', '''number''' ''coefficient'', '''number''' ''constant'')
+
+* {{GitHubSearch|Search=SetCardinalDirection}} [[SetCardinalDirection]]('''string''' ''directionName'', '''string''' ''font'', '''number''' ''cardinalDirection'')
+
+* {{GitHubSearch|Search=SetMinVisibleAlpha}} [[SetMinVisibleAlpha]]('''number''' [[Globals#MapDisplayPinType|MapDisplayPinType]] ''pinType'', '''number''' ''minVisibleAlpha'')
+
+* {{GitHubSearch|Search=SetMinVisibleScale}} [[SetMinVisibleScale]]('''number''' [[Globals#MapDisplayPinType|MapDisplayPinType]] ''pinType'', '''number''' ''minVisibleScale'')
+
+* {{GitHubSearch|Search=SetScaleCoefficients}} [[SetScaleCoefficients]]('''number''' [[Globals#MapDisplayPinType|MapDisplayPinType]] ''pinType'', '''number''' ''leadingCoefficient'', '''number''' ''coefficient'', '''number''' ''constant'')
+
+
+===Control===
+Objects that inherit behavior from '''Control'''
+* [[Controls#BackdropControl|BackdropControl]]
+* [[Controls#ButtonControl|ButtonControl]]
+* [[Controls#ColorSelectControl|ColorSelectControl]]
+* [[Controls#CompassDisplayControl|CompassDisplayControl]]
+* [[Controls#CooldownControl|CooldownControl]]
+* [[Controls#DebugTextControl|DebugTextControl]]
+* [[Controls#EditControl|EditControl]]
+* [[Controls#LabelControl|LabelControl]]
+* [[Controls#LineControl|LineControl]]
+* [[Controls#MapDisplayControl|MapDisplayControl]]
+* [[Controls#RootWindow|RootWindow]]
+* [[Controls#ScrollControl|ScrollControl]]
+* [[Controls#SliderControl|SliderControl]]
+* [[Controls#StatusBarControl|StatusBarControl]]
+* [[Controls#TextBufferControl|TextBufferControl]]
+* [[Controls#TextureCompositeControl|TextureCompositeControl]]
+* [[Controls#TextureControl|TextureControl]]
+* [[Controls#TooltipControl|TooltipControl]]
+* [[Controls#TopLevelWindow|TopLevelWindow]]
+
+
+* {{GitHubSearch|Search=AddFilterForEvent}} [[AddFilterForEvent]]('''number''' ''event'')
+** '''Returns:''' '''boolean''' ''success''
+
+* {{GitHubSearch|Search=ClearAnchors}} {{Protected_attributes}} [[ClearAnchors]]()
+
+* {{GitHubSearch|Search=Convert3DLocalOrientationToWorldOrientation}} [[Convert3DLocalOrientationToWorldOrientation]]('''number''' ''localPitch'', '''number''' ''localYaw'', '''number''' ''localRoll'')
+** '''Returns:''' '''number''' ''worldPitch'', '''number''' ''worldYaw'', '''number''' ''worldRoll''
+
+* {{GitHubSearch|Search=Convert3DLocalPositionToWorldPosition}} [[Convert3DLocalPositionToWorldPosition]]('''number''' ''localX'', '''number''' ''localY'', '''number''' ''localZ'')
+** '''Returns:''' '''number''' ''worldX'', '''number''' ''worldY'', '''number''' ''worldZ''
+
+* {{GitHubSearch|Search=Convert3DWorldOrientationToLocalOrientation}} [[Convert3DWorldOrientationToLocalOrientation]]('''number''' ''worldPitch'', '''number''' ''worldYaw'', '''number''' ''worldRoll'')
+** '''Returns:''' '''number''' ''localPitch'', '''number''' ''localYaw'', '''number''' ''localRoll''
+
+* {{GitHubSearch|Search=Convert3DWorldPositionToLocalPosition}} [[Convert3DWorldPositionToLocalPosition]]('''number''' ''worldX'', '''number''' ''worldY'', '''number''' ''worldZ'')
+** '''Returns:''' '''number''' ''localX'', '''number''' ''localY'', '''number''' ''localZ''
+
+* {{GitHubSearch|Search=Create3DRenderSpace}} [[Create3DRenderSpace]]()
+
+* {{GitHubSearch|Search=CreateControl}} [[CreateControl]]('''string''' ''arg1'', '''number''' ''type'')
+** '''Returns:''' '''object''' ''apRet''
+
+* {{GitHubSearch|Search=Destroy3DRenderSpace}} [[Destroy3DRenderSpace]]()
+
+* {{GitHubSearch|Search=Does3DRenderSpaceUseDepthBuffer}} [[Does3DRenderSpaceUseDepthBuffer]]()
+** '''Returns:''' '''boolean''' ''usesDepthBuffer''
+
+* {{GitHubSearch|Search=Get3DRenderSpaceForward}} [[Get3DRenderSpaceForward]]()
+** '''Returns:''' '''number''' ''x'', '''number''' ''y'', '''number''' ''z''
+
+* {{GitHubSearch|Search=Get3DRenderSpaceOrientation}} [[Get3DRenderSpaceOrientation]]()
+** '''Returns:''' '''number''' ''pitchRadians'', '''number''' ''yawRadians'', '''number''' ''rollRadians''
+
+* {{GitHubSearch|Search=Get3DRenderSpaceOrigin}} [[Get3DRenderSpaceOrigin]]()
+** '''Returns:''' '''number''' ''x'', '''number''' ''y'', '''number''' ''z''
+
+* {{GitHubSearch|Search=Get3DRenderSpaceRight}} [[Get3DRenderSpaceRight]]()
+** '''Returns:''' '''number''' ''x'', '''number''' ''y'', '''number''' ''z''
+
+* {{GitHubSearch|Search=Get3DRenderSpaceSystem}} [[Get3DRenderSpaceSystem]]()
+** '''Returns:''' '''number''' [[Globals#GuiRender3DSpaceSystem|GuiRender3DSpaceSystem]] ''system''
+
+* {{GitHubSearch|Search=Get3DRenderSpaceUp}} [[Get3DRenderSpaceUp]]()
+** '''Returns:''' '''number''' ''x'', '''number''' ''y'', '''number''' ''z''
+
+* {{GitHubSearch|Search=GetAlpha}} [[GetAlpha]]()
+** '''Returns:''' '''number''' ''alpha''
+
+* {{GitHubSearch|Search=GetAnchor}} [[GetAnchor]]('''number''' ''anchorIndex'')
+** '''Returns:''' '''boolean''' ''isValidAnchor'', '''number''' ''point'', '''object''' ''relativeTo'', '''number''' ''relativePoint'', '''number''' ''offsetX'', '''number''' ''offsetY'', '''number''' [[Globals#AnchorConstrains|AnchorConstrains]] ''anchorConstrains''
+
+* {{GitHubSearch|Search=GetBottom}} [[GetBottom]]()
+** '''Returns:''' '''number''' ''bottom''
+
+* {{GitHubSearch|Search=GetCenter}} [[GetCenter]]()
+** '''Returns:''' '''number''' ''centerX'', '''number''' ''centerY''
+
+* {{GitHubSearch|Search=GetChild}} [[GetChild]]('''number''' ''childIndex'')
+** '''Returns:''' '''object''' ''childControl''
+
+* {{GitHubSearch|Search=GetClampedToScreen}} [[GetClampedToScreen]]()
+** '''Returns:''' '''boolean''' ''clamped''
+
+* {{GitHubSearch|Search=GetClampedToScreenInsets}} [[GetClampedToScreenInsets]]()
+** '''Returns:''' '''number''' ''left'', '''number''' ''top'', '''number''' ''right'', '''number''' ''bottom''
+
+* {{GitHubSearch|Search=GetControlAlpha}} [[GetControlAlpha]]()
+** '''Returns:''' '''number''' ''alpha''
+
+* {{GitHubSearch|Search=GetControlScale}} [[GetControlScale]]()
+** '''Returns:''' '''number''' ''scale''
+
+* {{GitHubSearch|Search=GetDesiredHeight}} [[GetDesiredHeight]]()
+** '''Returns:''' '''number''' ''height''
+
+* {{GitHubSearch|Search=GetDesiredWidth}} [[GetDesiredWidth]]()
+** '''Returns:''' '''number''' ''width''
+
+* {{GitHubSearch|Search=GetDimensionConstraints}} [[GetDimensionConstraints]]()
+** '''Returns:''' '''number''' ''minWidth'', '''number''' ''minHeight'', '''number''' ''maxWidth'', '''number''' ''maxHeight''
+
+* {{GitHubSearch|Search=GetDimensions}} [[GetDimensions]]()
+** '''Returns:''' '''number''' ''width'', '''number''' ''height''
+
+* {{GitHubSearch|Search=GetDrawLayer}} [[GetDrawLayer]]()
+** '''Returns:''' '''number''' ''layer''
+
+* {{GitHubSearch|Search=GetDrawLevel}} [[GetDrawLevel]]()
+** '''Returns:''' '''number''' ''level''
+
+* {{GitHubSearch|Search=GetDrawTier}} [[GetDrawTier]]()
+** '''Returns:''' '''number''' ''tier''
+
+* {{GitHubSearch|Search=GetExcludeFromResizeToFitExtents}} [[GetExcludeFromResizeToFitExtents]]()
+** '''Returns:''' '''boolean''' ''excludes''
+
+* {{GitHubSearch|Search=GetHandler}} [[GetHandler]]('''string''' ''handlerName'')
+** '''Returns:''' '''function''' ''functionRef''
+
+* {{GitHubSearch|Search=GetHeight}} [[GetHeight]]()
+** '''Returns:''' '''number''' ''height''
+
+* {{GitHubSearch|Search=GetHitInsets}} [[GetHitInsets]]()
+** '''Returns:''' '''number''' ''left'', '''number''' ''top'', '''number''' ''right'', '''number''' ''bottom''
+
+* {{GitHubSearch|Search=GetId}} [[GetId]]()
+** '''Returns:''' '''number''' ''id''
+
+* {{GitHubSearch|Search=GetInheritsAlpha}} [[GetInheritsAlpha]]()
+** '''Returns:''' '''boolean''' ''inheritAlpha''
+
+* {{GitHubSearch|Search=GetInheritsScale}} [[GetInheritsScale]]()
+** '''Returns:''' '''boolean''' ''inheritScale''
+
+* {{GitHubSearch|Search=GetLeft}} [[GetLeft]]()
+** '''Returns:''' '''number''' ''left''
+
+* {{GitHubSearch|Search=GetName}} [[GetName]]()
+** '''Returns:''' '''string''' ''name''
+
+* {{GitHubSearch|Search=GetNamedChild}} [[GetNamedChild]]('''string''' ''childName'')
+** '''Returns:''' '''object''' ''returnedControl''
+
+* {{GitHubSearch|Search=GetNumChildren}} [[GetNumChildren]]()
+** '''Returns:''' '''number''' ''numChildren''
+
+* {{GitHubSearch|Search=GetOwningWindow}} [[GetOwningWindow]]()
+** '''Returns:''' '''object''' ''OwningTopLevelWindow''
+
+* {{GitHubSearch|Search=GetParent}} [[GetParent]]()
+** '''Returns:''' '''object''' ''ret1''
+
+* {{GitHubSearch|Search=GetResizeToFitDescendents}} [[GetResizeToFitDescendents]]()
+** '''Returns:''' '''boolean''' ''resizes''
+
+* {{GitHubSearch|Search=GetResizeToFitPadding}} [[GetResizeToFitPadding]]()
+** '''Returns:''' '''number''' ''width'', '''number''' ''height''
+
+* {{GitHubSearch|Search=GetRight}} [[GetRight]]()
+** '''Returns:''' '''number''' ''right''
+
+* {{GitHubSearch|Search=GetScale}} [[GetScale]]()
+** '''Returns:''' '''number''' ''scale''
+
+* {{GitHubSearch|Search=GetScreenRect}} [[GetScreenRect]]()
+** '''Returns:''' '''number''' ''left'', '''number''' ''top'', '''number''' ''right'', '''number''' ''bottom''
+
+* {{GitHubSearch|Search=GetTop}} [[GetTop]]()
+** '''Returns:''' '''number''' ''top''
+
+* {{GitHubSearch|Search=GetType}} [[GetType]]()
+** '''Returns:''' '''number''' ''type''
+
+* {{GitHubSearch|Search=GetWidth}} [[GetWidth]]()
+** '''Returns:''' '''number''' ''width''
+
+* {{GitHubSearch|Search=Has3DRenderSpace}} [[Has3DRenderSpace]]()
+** '''Returns:''' '''boolean''' ''has3DRenderSpace''
+
+* {{GitHubSearch|Search=IsChildOf}} [[IsChildOf]]('''object''' ''desiredParent'')
+** '''Returns:''' '''boolean''' ''isChild''
+
+* {{GitHubSearch|Search=IsControlHidden}} [[IsControlHidden]]()
+** '''Returns:''' '''boolean''' ''hidden''
+
+* {{GitHubSearch|Search=IsHandlerSet}} [[IsHandlerSet]]('''string''' ''handlerName'')
+** '''Returns:''' '''boolean''' ''isSet''
+
+* {{GitHubSearch|Search=IsHidden}} [[IsHidden]]()
+** '''Returns:''' '''boolean''' ''hidden''
+
+* {{GitHubSearch|Search=IsKeyboardEnabled}} [[IsKeyboardEnabled]]()
+** '''Returns:''' '''boolean''' ''enabled''
+
+* {{GitHubSearch|Search=IsMouseEnabled}} [[IsMouseEnabled]]()
+** '''Returns:''' '''boolean''' ''enabled''
+
+* {{GitHubSearch|Search=IsPointInside}} [[IsPointInside]]('''number''' ''x'', '''number''' ''y'', '''number''' ''leftOffset'', '''number''' ''topOffset'', '''number''' ''rightOffset'', '''number''' ''bottomOffset'')
+** '''Returns:''' '''boolean''' ''isInside''
+
+* {{GitHubSearch|Search=RegisterForEvent}} [[RegisterForEvent]]('''number''' ''event'', '''function''' ''callback'')
+** '''Returns:''' '''boolean''' ''success''
+
+* {{GitHubSearch|Search=Set3DRenderSpaceForward}} [[Set3DRenderSpaceForward]]('''number''' ''x'', '''number''' ''y'', '''number''' ''z'')
+
+* {{GitHubSearch|Search=Set3DRenderSpaceOrientation}} [[Set3DRenderSpaceOrientation]]('''number''' ''pitchRadians'', '''number''' ''yawRadians'', '''number''' ''rollRadians'')
+
+* {{GitHubSearch|Search=Set3DRenderSpaceOrigin}} [[Set3DRenderSpaceOrigin]]('''number''' ''xM'', '''number''' ''yM'', '''number''' ''zM'')
+
+* {{GitHubSearch|Search=Set3DRenderSpaceRight}} [[Set3DRenderSpaceRight]]('''number''' ''x'', '''number''' ''y'', '''number''' ''z'')
+
+* {{GitHubSearch|Search=Set3DRenderSpaceSystem}} [[Set3DRenderSpaceSystem]]('''number''' [[Globals#GuiRender3DSpaceSystem|GuiRender3DSpaceSystem]] ''system'')
+
+* {{GitHubSearch|Search=Set3DRenderSpaceUp}} [[Set3DRenderSpaceUp]]('''number''' ''x'', '''number''' ''y'', '''number''' ''z'')
+
+* {{GitHubSearch|Search=Set3DRenderSpaceUsesDepthBuffer}} [[Set3DRenderSpaceUsesDepthBuffer]]('''boolean''' ''usesDepthBuffer'')
+
+* {{GitHubSearch|Search=SetAlpha}} {{Protected_attributes}} [[SetAlpha]]('''number''' ''alpha'')
+
+* {{GitHubSearch|Search=SetAnchor}} {{Protected_attributes}} [[SetAnchor]]('''number''' ''whereOnMe'', '''object''' ''anchorTargetControl'', '''number''' ''whereOnTarget'', '''number''' ''offsetX'', '''number''' ''offsetY'', '''number''' [[Globals#AnchorConstrains|AnchorConstrains]] ''anchorConstrains'')
+
+* {{GitHubSearch|Search=SetAnchorFill}} {{Protected_attributes}} [[SetAnchorFill]]('''object''' ''anchorTargetControl'')
+
+* {{GitHubSearch|Search=SetClampedToScreen}} [[SetClampedToScreen]]('''boolean''' ''clamped'')
+
+* {{GitHubSearch|Search=SetClampedToScreenInsets}} [[SetClampedToScreenInsets]]('''number''' ''left'', '''number''' ''top'', '''number''' ''right'', '''number''' ''bottom'')
+
+* {{GitHubSearch|Search=SetDimensionConstraints}} [[SetDimensionConstraints]]('''number''' ''minWidth'', '''number''' ''minHeight'', '''number''' ''maxWidth'', '''number''' ''maxHeight'')
+
+* {{GitHubSearch|Search=SetDimensions}} {{Protected_attributes}} [[SetDimensions]]('''number''' ''width'', '''number''' ''height'')
+
+* {{GitHubSearch|Search=SetDrawLayer}} {{Protected_attributes}} [[SetDrawLayer]]('''number''' ''layer'')
+
+* {{GitHubSearch|Search=SetDrawLevel}} {{Protected_attributes}} [[SetDrawLevel]]('''number''' ''level'')
+
+* {{GitHubSearch|Search=SetDrawTier}} {{Protected_attributes}} [[SetDrawTier]]('''number''' ''tier'')
+
+* {{GitHubSearch|Search=SetExcludeFromResizeToFitExtents}} {{Protected_attributes}} [[SetExcludeFromResizeToFitExtents]]('''boolean''' ''exclude'')
+
+* {{GitHubSearch|Search=SetHandler}} [[SetHandler]]('''string''' ''handlerName'', '''function''' ''functionRef'')
+
+* {{GitHubSearch|Search=SetHeight}} {{Protected_attributes}} [[SetHeight]]('''number''' ''height'')
+
+* {{GitHubSearch|Search=SetHidden}} {{Protected_attributes}} [[SetHidden]]('''boolean''' ''aHidden'')
+
+* {{GitHubSearch|Search=SetHitInsets}} [[SetHitInsets]]('''number''' ''left'', '''number''' ''top'', '''number''' ''right'', '''number''' ''bottom'')
+
+* {{GitHubSearch|Search=SetId}} [[SetId]]('''number''' ''id'')
+
+* {{GitHubSearch|Search=SetInheritAlpha}} [[SetInheritAlpha]]('''boolean''' ''inheritAlpha'')
+
+* {{GitHubSearch|Search=SetInheritScale}} [[SetInheritScale]]('''boolean''' ''inheritScale'')
+
+* {{GitHubSearch|Search=SetKeyboardEnabled}} {{Protected_attributes}} [[SetKeyboardEnabled]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=SetMouseEnabled}} {{Protected_attributes}} [[SetMouseEnabled]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=SetMovable}} [[SetMovable]]('''boolean''' ''isMovable'')
+
+* {{GitHubSearch|Search=SetParent}} {{Protected_attributes}} [[SetParent]]('''object''' ''newParent'')
+
+* {{GitHubSearch|Search=SetResizeHandleSize}} [[SetResizeHandleSize]]('''number''' ''handleSize'')
+
+* {{GitHubSearch|Search=SetResizeToFitDescendents}} {{Protected_attributes}} [[SetResizeToFitDescendents]]('''boolean''' ''resize'')
+
+* {{GitHubSearch|Search=SetResizeToFitPadding}} [[SetResizeToFitPadding]]('''number''' ''width'', '''number''' ''height'')
+
+* {{GitHubSearch|Search=SetScale}} {{Protected_attributes}} [[SetScale]]('''number''' ''scale'')
+
+* SetShapeType '''public''' ('''number''' ''shapeType'')
+
+* {{GitHubSearch|Search=SetSimpleAnchor}} {{Protected_attributes}} [[SetSimpleAnchor]]('''object''' ''anchorTargetControl'', '''number''' ''offsetX'', '''number''' ''offsetY'')
+
+* {{GitHubSearch|Search=SetSimpleAnchorParent}} {{Protected_attributes}} [[SetSimpleAnchorParent]]('''number''' ''offsetX'', '''number''' ''offsetY'')
+
+* {{GitHubSearch|Search=SetWidth}} {{Protected_attributes}} [[SetWidth]]('''number''' ''width'')
+
+* {{GitHubSearch|Search=StartMoving}} {{Protected_attributes}} [[StartMoving]]()
+** '''Returns:''' '''boolean''' ''isMoving''
+
+* {{GitHubSearch|Search=StopMovingOrResizing}} {{Protected_attributes}} [[StopMovingOrResizing]]()
+
+* {{GitHubSearch|Search=ToggleHidden}} {{Protected_attributes}} [[ToggleHidden]]()
+
+* {{GitHubSearch|Search=UnregisterForEvent}} [[UnregisterForEvent]]('''number''' ''event'')
+** '''Returns:''' '''boolean''' ''success''
+
+
+===CooldownControl===
+* {{GitHubSearch|Search=GetDuration}} [[GetDuration]]()
+** '''Returns:''' '''number''' ''duration''
+
+* {{GitHubSearch|Search=GetPercentCompleteFixed}} [[GetPercentCompleteFixed]]()
+** '''Returns:''' '''number''' ''percentComplete''
+
+* {{GitHubSearch|Search=GetTimeLeft}} [[GetTimeLeft]]()
+** '''Returns:''' '''number''' ''time''
+
+* {{GitHubSearch|Search=ResetCooldown}} [[ResetCooldown]]()
+
+* {{GitHubSearch|Search=SetBlendMode}} [[SetBlendMode]]('''number''' ''blendMode'')
+
+* {{GitHubSearch|Search=SetCooldownRemainTime}} [[SetCooldownRemainTime]]('''number''' ''remain'')
+
+* {{GitHubSearch|Search=SetDesaturation}} [[SetDesaturation]]('''number''' ''desaturation'')
+
+* {{GitHubSearch|Search=SetFillColor}} [[SetFillColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetLeadingEdgeTexture}} [[SetLeadingEdgeTexture]]('''string''' ''filename'')
+
+* {{GitHubSearch|Search=SetPercentCompleteFixed}} [[SetPercentCompleteFixed]]('''number''' ''percentComplete'')
+
+* {{GitHubSearch|Search=SetRadialCooldownClockwise}} [[SetRadialCooldownClockwise]]('''boolean''' ''clockwise'')
+
+* {{GitHubSearch|Search=SetRadialCooldownGradient}} [[SetRadialCooldownGradient]]('''number''' ''startAlpha'', '''number''' ''angularDistance'')
+
+* {{GitHubSearch|Search=SetRadialCooldownOriginAngle}} [[SetRadialCooldownOriginAngle]]('''number''' ''originAngle'')
+
+* {{GitHubSearch|Search=SetTexture}} [[SetTexture]]('''string''' ''filename'')
+
+* {{GitHubSearch|Search=SetTextureReleaseOption}} [[SetTextureReleaseOption]]('''number''' [[Globals#ReleaseReferenceOptions|ReleaseReferenceOptions]] ''releaseOption'')
+
+* {{GitHubSearch|Search=SetVerticalCooldownLeadingEdgeHeight}} [[SetVerticalCooldownLeadingEdgeHeight]]('''number''' ''leadingEdgeHeight'')
+
+* {{GitHubSearch|Search=StartCooldown}} [[StartCooldown]]('''number''' ''remain'', '''number''' ''duration'', '''number''' ''cooldownType'', '''number''' ''cooldownTimeType'', '''boolean''' ''drawLeadingEdge'')
+
+* {{GitHubSearch|Search=StartFixedCooldown}} [[StartFixedCooldown]]('''number''' ''percentComplete'', '''number''' ''cooldownType'', '''number''' ''cooldownTimeType'', '''boolean''' ''drawLeadingEdge'')
+
+
+===DebugTextControl===
+* {{GitHubSearch|Search=Clear}} [[Clear]]()
+
+* {{GitHubSearch|Search=SetFont}} [[SetFont]]('''string''' ''fontStr'')
+
+
+===EditControl===
+* {{GitHubSearch|Search=AddValidCharacter}} [[AddValidCharacter]]('''string''' ''validCharacter'')
+
+* {{GitHubSearch|Search=Clear}} [[Clear]]()
+
+* {{GitHubSearch|Search=ClearSelection}} [[ClearSelection]]()
+
+* {{GitHubSearch|Search=CopyAllTextToClipboard}} {{Private function}} [[CopyAllTextToClipboard]]()
+
+* {{GitHubSearch|Search=GetCopyEnabled}} [[GetCopyEnabled]]()
+** '''Returns:''' '''boolean''' ''enabled''
+
+* {{GitHubSearch|Search=GetCursorPosition}} [[GetCursorPosition]]()
+** '''Returns:''' '''number''' ''cursorPosition''
+
+* {{GitHubSearch|Search=GetEditEnabled}} [[GetEditEnabled]]()
+** '''Returns:''' '''boolean''' ''enabled''
+
+* {{GitHubSearch|Search=GetFontHeight}} [[GetFontHeight]]()
+** '''Returns:''' '''number''' ''fontHeightUIUnits''
+
+* {{GitHubSearch|Search=GetIMECompositionExclusionArea}} [[GetIMECompositionExclusionArea]]()
+** '''Returns:''' '''number''' ''leftControlSpace'', '''number''' ''topControlSpace'', '''number''' ''rightControlSpace'', '''number''' ''bottomControlSpace''
+
+* {{GitHubSearch|Search=GetNewLineEnabled}} [[GetNewLineEnabled]]()
+** '''Returns:''' '''boolean''' ''enabled''
+
+* {{GitHubSearch|Search=GetPasteEnabled}} [[GetPasteEnabled]]()
+** '''Returns:''' '''boolean''' ''enabled''
+
+* {{GitHubSearch|Search=GetScrollExtents}} [[GetScrollExtents]]()
+** '''Returns:''' '''number''' ''numLines''
+
+* {{GitHubSearch|Search=GetText}} [[GetText]]()
+** '''Returns:''' '''string''' ''apRet''
+
+* {{GitHubSearch|Search=GetTopLineIndex}} [[GetTopLineIndex]]()
+** '''Returns:''' '''number''' ''index''
+
+* {{GitHubSearch|Search=HasFocus}} [[HasFocus]]()
+** '''Returns:''' '''boolean''' ''aRet''
+
+* {{GitHubSearch|Search=HasSelection}} [[HasSelection]]()
+** '''Returns:''' '''boolean''' ''hasSelection''
+
+* {{GitHubSearch|Search=InsertText}} [[InsertText]]('''string''' ''aText'')
+
+* {{GitHubSearch|Search=IsComposingIMEText}} [[IsComposingIMEText]]()
+** '''Returns:''' '''boolean''' ''isComposing''
+
+* {{GitHubSearch|Search=IsMultiLine}} [[IsMultiLine]]()
+** '''Returns:''' '''boolean''' ''isMultiLine''
+
+* {{GitHubSearch|Search=LoseFocus}} [[LoseFocus]]()
+
+* {{GitHubSearch|Search=RemoveAllValidCharacters}} [[RemoveAllValidCharacters]]()
+
+* {{GitHubSearch|Search=SelectAll}} [[SelectAll]]()
+
+* {{GitHubSearch|Search=SetColor}} [[SetColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetCopyEnabled}} [[SetCopyEnabled]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=SetCursorPosition}} [[SetCursorPosition]]('''number''' ''cursorPosition'')
+
+* {{GitHubSearch|Search=SetEditEnabled}} [[SetEditEnabled]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=SetEscapeMarkup}} [[SetEscapeMarkup]]('''boolean''' ''escapeMarkup'')
+
+* {{GitHubSearch|Search=SetFont}} [[SetFont]]('''string''' ''font'')
+
+* {{GitHubSearch|Search=SetMaxInputChars}} [[SetMaxInputChars]]('''number''' ''maxChars'')
+
+* {{GitHubSearch|Search=SetMultiLine}} [[SetMultiLine]]('''boolean''' ''isMultiLine'')
+
+* {{GitHubSearch|Search=SetNewLineEnabled}} [[SetNewLineEnabled]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=SetPasteEnabled}} [[SetPasteEnabled]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=SetSelection}} [[SetSelection]]('''number''' ''selectionStartIndex'', '''number''' ''selectionEndIndex'')
+
+* {{GitHubSearch|Search=SetSelectionColor}} [[SetSelectionColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetText}} [[SetText]]('''string''' ''aText'')
+
+* {{GitHubSearch|Search=SetTextType}} [[SetTextType]]('''number''' ''textType'')
+
+* {{GitHubSearch|Search=SetTopLineIndex}} [[SetTopLineIndex]]('''number''' ''index'')
+
+* {{GitHubSearch|Search=SetVirtualKeyboardType}} [[SetVirtualKeyboardType]]('''number''' [[Globals#VirtualKeyboardType|VirtualKeyboardType]] ''aKeyboardType'')
+
+* {{GitHubSearch|Search=ShouldEscapeMarkup}} [[ShouldEscapeMarkup]]()
+** '''Returns:''' '''boolean''' ''escapeMarkup''
+
+* {{GitHubSearch|Search=TakeFocus}} [[TakeFocus]]()
+
+* {{GitHubSearch|Search=WasLastChangeVirtualKeyboard}} [[WasLastChangeVirtualKeyboard]]()
+** '''Returns:''' '''boolean''' ''aRet''
+
+
+===FontObject===
+* {{GitHubSearch|Search=GetFontInfo}} [[GetFontInfo]]()
+** '''Returns:''' '''string''' ''face'', '''number''' ''size'', '''string''' ''option''
+
+* {{GitHubSearch|Search=SetFont}} [[SetFont]]('''string''' ''fontDescriptor'')
+
+
+===LabelControl===
+* {{GitHubSearch|Search=AnchorToBaseline}} [[AnchorToBaseline]]('''object''' ''toLabel'', '''number''' ''offsetX'', '''number''' [[Globals#AnchorPosition|AnchorPosition]] ''anchorSide'')
+
+* {{GitHubSearch|Search=Clean}} [[Clean]]()
+
+* {{GitHubSearch|Search=ClearAnchorToBaseline}} [[ClearAnchorToBaseline]]('''object''' ''toLabel'')
+
+* {{GitHubSearch|Search=DidLineWrap}} [[DidLineWrap]]()
+** '''Returns:''' '''boolean''' ''didLineWrap''
+
+* {{GitHubSearch|Search=GetColor}} [[GetColor]]()
+** '''Returns:''' '''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a''
+
+* {{GitHubSearch|Search=GetFontHeight}} [[GetFontHeight]]()
+** '''Returns:''' '''number''' ''fontHeightUIUnits''
+
+* {{GitHubSearch|Search=GetHorizontalAlignment}} [[GetHorizontalAlignment]]()
+** '''Returns:''' '''number''' ''align''
+
+* {{GitHubSearch|Search=GetLinkEnabled}} [[GetLinkEnabled]]()
+** '''Returns:''' '''boolean''' ''linkEnabed''
+
+* {{GitHubSearch|Search=GetModifyTextType}} [[GetModifyTextType]]()
+** '''Returns:''' '''number''' [[Globals#ModifyTextType|ModifyTextType]] ''modifyTextType''
+
+* {{GitHubSearch|Search=GetNumLines}} [[GetNumLines]]()
+** '''Returns:''' '''number''' ''numLines''
+
+* {{GitHubSearch|Search=GetStringWidth}} [[GetStringWidth]]('''string''' ''text'')
+** '''Returns:''' '''number''' ''scaledPixelWidth''
+
+* {{GitHubSearch|Search=GetStyleColor}} [[GetStyleColor]]()
+** '''Returns:''' '''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a''
+
+* {{GitHubSearch|Search=GetText}} [[GetText]]()
+** '''Returns:''' '''string''' ''apRet''
+
+* {{GitHubSearch|Search=GetTextDimensions}} [[GetTextDimensions]]()
+** '''Returns:''' '''number''' ''stringWidthUIUnits'', '''number''' ''stringHeightUIUnits''
+
+* {{GitHubSearch|Search=GetTextHeight}} [[GetTextHeight]]()
+** '''Returns:''' '''number''' ''stringHeightUIUnits''
+
+* {{GitHubSearch|Search=GetTextWidth}} [[GetTextWidth]]()
+** '''Returns:''' '''number''' ''stringWidthUIUnits''
+
+* {{GitHubSearch|Search=GetVerticalAlignment}} [[GetVerticalAlignment]]()
+** '''Returns:''' '''number''' ''align''
+
+* {{GitHubSearch|Search=SetColor}} [[SetColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetDesaturation}} [[SetDesaturation]]('''number''' ''desaturation'')
+
+* {{GitHubSearch|Search=SetFont}} [[SetFont]]('''string''' ''fontString'')
+
+* {{GitHubSearch|Search=SetHorizontalAlignment}} [[SetHorizontalAlignment]]('''number''' ''align'')
+
+* {{GitHubSearch|Search=SetLineSpacing}} [[SetLineSpacing]]('''number''' ''lineSpacingPixels'')
+
+* {{GitHubSearch|Search=SetLinkEnabled}} [[SetLinkEnabled]]('''boolean''' ''linkEnabed'')
+
+* {{GitHubSearch|Search=SetMaxLineCount}} [[SetMaxLineCount]]('''number''' ''maxLineCount'')
+
+* {{GitHubSearch|Search=SetMinLineCount}} [[SetMinLineCount]]('''number''' ''minLineCount'')
+
+* {{GitHubSearch|Search=SetModifyTextType}} [[SetModifyTextType]]('''number''' [[Globals#ModifyTextType|ModifyTextType]] ''modifyTextType'')
+
+* {{GitHubSearch|Search=SetNewLineX}} [[SetNewLineX]]('''number''' ''newLineXPixels'')
+
+* {{GitHubSearch|Search=SetPixelRoundingEnabled}} [[SetPixelRoundingEnabled]]('''boolean''' ''pixelRoundingEnabled'')
+
+* {{GitHubSearch|Search=SetStyleColor}} [[SetStyleColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetText}} [[SetText]]('''string''' ''aText'')
+
+* {{GitHubSearch|Search=SetVerticalAlignment}} [[SetVerticalAlignment]]('''number''' ''verticalAlign'')
+
+* {{GitHubSearch|Search=SetWrapMode}} [[SetWrapMode]]('''number''' ''wrapMode'')
+
+* {{GitHubSearch|Search=WasTruncated}} [[WasTruncated]]()
+** '''Returns:''' '''boolean''' ''wasTruncated''
+
+
+===LineControl===
+* {{GitHubSearch|Search=GetBlendMode}} [[GetBlendMode]]()
+** '''Returns:''' '''number''' [[Globals#TextureBlendMode|TextureBlendMode]] ''blendMode''
+
+* {{GitHubSearch|Search=GetColor}} [[GetColor]]()
+** '''Returns:''' '''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a''
+
+* {{GitHubSearch|Search=GetDesaturation}} [[GetDesaturation]]()
+** '''Returns:''' '''number''' ''desaturation''
+
+* {{GitHubSearch|Search=GetTextureCoords}} [[GetTextureCoords]]()
+** '''Returns:''' '''number''' ''left'', '''number''' ''right'', '''number''' ''top'', '''number''' ''bottom''
+
+* {{GitHubSearch|Search=GetTextureFileDimensions}} [[GetTextureFileDimensions]]()
+** '''Returns:''' '''number''' ''pixelWidth'', '''number''' ''pixelHeight''
+
+* {{GitHubSearch|Search=GetTextureFileName}} [[GetTextureFileName]]()
+** '''Returns:''' '''string''' ''filename''
+
+* {{GitHubSearch|Search=IsPixelRoundingEnabled}} [[IsPixelRoundingEnabled]]()
+** '''Returns:''' '''boolean''' ''pixelRoundingEnabled''
+
+* {{GitHubSearch|Search=IsTextureLoaded}} [[IsTextureLoaded]]()
+** '''Returns:''' '''boolean''' ''loaded''
+
+* {{GitHubSearch|Search=SetBlendMode}} [[SetBlendMode]]('''number''' [[Globals#TextureBlendMode|TextureBlendMode]] ''blendMode'')
+
+* {{GitHubSearch|Search=SetColor}} [[SetColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetDesaturation}} [[SetDesaturation]]('''number''' ''desaturation'')
+
+* {{GitHubSearch|Search=SetGradientColors}} [[SetGradientColors]]('''number''' [[Globals#ControlOrientation|ControlOrientation]] ''orientation'', '''number''' ''startR'', '''number''' ''startG'', '''number''' ''startB'', '''number''' ''startA'', '''number''' ''endR'', '''number''' ''endG'', '''number''' ''endB'', '''number''' ''endA'')
+
+* {{GitHubSearch|Search=SetPixelRoundingEnabled}} [[SetPixelRoundingEnabled]]('''boolean''' ''pixelRoundingEnabled'')
+
+* {{GitHubSearch|Search=SetTexture}} [[SetTexture]]('''string''' ''filename'')
+
+* {{GitHubSearch|Search=SetTextureCoords}} [[SetTextureCoords]]('''number''' ''left'', '''number''' ''right'', '''number''' ''top'', '''number''' ''bottom'')
+
+* {{GitHubSearch|Search=SetThickness}} [[SetThickness]]('''number''' ''thickness'')
+
+* {{GitHubSearch|Search=SetVertexColors}} [[SetVertexColors]]('''number''' ''vertexPoints'', '''number''' ''red'', '''number''' ''green'', '''number''' ''blue'', '''number''' ''alpha'')
+
+
+===MapDisplayControl===
+* {{GitHubSearch|Search=GetZoom}} [[GetZoom]]()
+** '''Returns:''' '''number''' ''normalizedRadius''
+
+* {{GitHubSearch|Search=SetPinFont}} [[SetPinFont]]('''string''' ''pinFont'')
+
+* {{GitHubSearch|Search=SetZoom}} [[SetZoom]]('''number''' ''normalizedRadius'')
+
+
+===RootWindow===
+
+===ScrollControl===
+* {{GitHubSearch|Search=GetFadeGradient}} [[GetFadeGradient]]('''number''' ''gradientIndex'')
+** '''Returns:''' '''number''' ''normalX'', '''number''' ''normalY'', '''number''' ''gradientLength''
+
+* {{GitHubSearch|Search=GetScrollExtents}} [[GetScrollExtents]]()
+** '''Returns:''' '''number''' ''horizontal'', '''number''' ''vertical''
+
+* {{GitHubSearch|Search=GetScrollOffsets}} [[GetScrollOffsets]]()
+** '''Returns:''' '''number''' ''horizontal'', '''number''' ''vertical''
+
+* {{GitHubSearch|Search=RestoreToExtents}} [[RestoreToExtents]]('''number''' ''duration'')
+
+* {{GitHubSearch|Search=SetFadeGradient}} [[SetFadeGradient]]('''number''' ''gradientIndex'', '''number''' ''normalX'', '''number''' ''normalY'', '''number''' ''gradientLength'')
+
+* {{GitHubSearch|Search=SetHorizontalScroll}} [[SetHorizontalScroll]]('''number''' ''offset'')
+
+* {{GitHubSearch|Search=SetScrollBounding}} [[SetScrollBounding]]('''number''' [[Globals#ScrollBounding|ScrollBounding]] ''bounding'')
+
+* {{GitHubSearch|Search=SetVerticalScroll}} [[SetVerticalScroll]]('''number''' ''offset'')
+
+
+===SliderControl===
+* {{GitHubSearch|Search=DoesAllowDraggingFromThumb}} [[DoesAllowDraggingFromThumb]]()
+** '''Returns:''' '''boolean''' ''allow''
+
+* {{GitHubSearch|Search=GetEnabled}} [[GetEnabled]]()
+** '''Returns:''' '''boolean''' ''isEnabled''
+
+* {{GitHubSearch|Search=GetMinMax}} [[GetMinMax]]()
+** '''Returns:''' '''number''' ''min'', '''number''' ''max''
+
+* {{GitHubSearch|Search=GetOrientation}} [[GetOrientation]]()
+** '''Returns:''' '''number''' ''orientation''
+
+* {{GitHubSearch|Search=GetThumbTextureControl}} [[GetThumbTextureControl]]()
+** '''Returns:''' '''object''' ''textureControl''
+
+* {{GitHubSearch|Search=GetValue}} [[GetValue]]()
+** '''Returns:''' '''number''' ''value''
+
+* {{GitHubSearch|Search=GetValueStep}} [[GetValueStep]]()
+** '''Returns:''' '''number''' ''step''
+
+* {{GitHubSearch|Search=IsThumbFlushWithExtents}} [[IsThumbFlushWithExtents]]()
+** '''Returns:''' '''boolean''' ''flush''
+
+* {{GitHubSearch|Search=SetAllowDraggingFromThumb}} [[SetAllowDraggingFromThumb]]('''boolean''' ''allow'')
+
+* {{GitHubSearch|Search=SetBackgroundBottomTexture}} [[SetBackgroundBottomTexture]]('''string''' ''fileName'', '''number''' ''texTop'', '''number''' ''texLeft'', '''number''' ''texBottom'', '''number''' ''texRight'')
+
+* {{GitHubSearch|Search=SetBackgroundMiddleTexture}} [[SetBackgroundMiddleTexture]]('''string''' ''fileName'', '''number''' ''texTop'', '''number''' ''texLeft'', '''number''' ''texBottom'', '''number''' ''texRight'')
+
+* {{GitHubSearch|Search=SetBackgroundTopTexture}} [[SetBackgroundTopTexture]]('''string''' ''fileName'', '''number''' ''texTop'', '''number''' ''texLeft'', '''number''' ''texBottom'', '''number''' ''texRight'')
+
+* {{GitHubSearch|Search=SetColor}} [[SetColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetEnabled}} [[SetEnabled]]('''boolean''' ''enable'')
+
+* {{GitHubSearch|Search=SetMinMax}} [[SetMinMax]]('''number''' ''min'', '''number''' ''max'')
+
+* {{GitHubSearch|Search=SetOrientation}} [[SetOrientation]]('''number''' ''orientation'')
+
+* {{GitHubSearch|Search=SetThumbFlushWithExtents}} [[SetThumbFlushWithExtents]]('''boolean''' ''flush'')
+
+* {{GitHubSearch|Search=SetThumbTexture}} [[SetThumbTexture]]('''string''' ''filename'', '''string''' ''disabledFilename'', '''string''' ''highlightedFilename'', '''number''' ''thumbWidth'', '''number''' ''thumbHeight'', '''number''' ''texTop'', '''number''' ''texLeft'', '''number''' ''texBottom'', '''number''' ''texRight'')
+
+* {{GitHubSearch|Search=SetThumbTextureHeight}} [[SetThumbTextureHeight]]('''number''' ''height'')
+
+* {{GitHubSearch|Search=SetValue}} [[SetValue]]('''number''' ''value'')
+
+* {{GitHubSearch|Search=SetValueStep}} [[SetValueStep]]('''number''' ''step'')
+
+
+===StatusBarControl===
+* {{GitHubSearch|Search=ClearFadeOutLossAdjustedTopValue}} [[ClearFadeOutLossAdjustedTopValue]]()
+
+* {{GitHubSearch|Search=EnableFadeOut}} [[EnableFadeOut]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=EnableLeadingEdge}} [[EnableLeadingEdge]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=EnableScrollingOverlay}} [[EnableScrollingOverlay]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=GetMinMax}} [[GetMinMax]]()
+** '''Returns:''' '''number''' ''min'', '''number''' ''max''
+
+* {{GitHubSearch|Search=GetValue}} [[GetValue]]()
+** '''Returns:''' '''number''' ''value''
+
+* {{GitHubSearch|Search=SetBarAlignment}} [[SetBarAlignment]]('''number''' ''barAlignment'')
+
+* {{GitHubSearch|Search=SetColor}} [[SetColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetFadeOutGainColor}} [[SetFadeOutGainColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetFadeOutLossAdjustedTopValue}} [[SetFadeOutLossAdjustedTopValue]]('''number''' ''topValue'')
+
+* {{GitHubSearch|Search=SetFadeOutLossColor}} [[SetFadeOutLossColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetFadeOutLossSetValueToAdjust}} [[SetFadeOutLossSetValueToAdjust]]('''number''' ''adjustValue'')
+
+* {{GitHubSearch|Search=SetFadeOutTexture}} [[SetFadeOutTexture]]('''string''' ''filename'')
+
+* {{GitHubSearch|Search=SetFadeOutTime}} [[SetFadeOutTime]]('''number''' ''fadeOutSeconds'', '''number''' ''fadeOutDelaySeconds'')
+
+* {{GitHubSearch|Search=SetGradientColors}} [[SetGradientColors]]('''number''' ''startR'', '''number''' ''startG'', '''number''' ''startB'', '''number''' ''startA'', '''number''' ''endR'', '''number''' ''endG'', '''number''' ''endB'', '''number''' ''endA'')
+
+* {{GitHubSearch|Search=SetLeadingEdge}} [[SetLeadingEdge]]('''string''' ''textureFile'', '''number''' ''width'', '''number''' ''height'')
+
+* {{GitHubSearch|Search=SetLeadingEdgeTextureCoords}} [[SetLeadingEdgeTextureCoords]]('''number''' ''left'', '''number''' ''right'', '''number''' ''top'', '''number''' ''bottom'')
+
+* {{GitHubSearch|Search=SetMinMax}} [[SetMinMax]]('''number''' ''aMin'', '''number''' ''aMax'')
+
+* {{GitHubSearch|Search=SetOrientation}} [[SetOrientation]]('''number''' ''orientation'')
+
+* {{GitHubSearch|Search=SetTexture}} [[SetTexture]]('''string''' ''filename'')
+
+* {{GitHubSearch|Search=SetTextureCoords}} [[SetTextureCoords]]('''number''' ''left'', '''number''' ''right'', '''number''' ''top'', '''number''' ''bottom'')
+
+* {{GitHubSearch|Search=SetValue}} [[SetValue]]('''number''' ''aValue'')
+
+* {{GitHubSearch|Search=SetupScrollingOverlay}} [[SetupScrollingOverlay]]('''string''' ''textureFile'', '''number''' ''width'', '''number''' ''height'', '''number''' ''duration'')
+
+
+===TextBufferControl===
+* {{GitHubSearch|Search=AddMessage}} [[AddMessage]]('''string''' ''aText'', '''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''colorId'')
+
+* {{GitHubSearch|Search=Clear}} [[Clear]]()
+
+* {{GitHubSearch|Search=GetDrawLastEntryIfOutOfRoom}} [[GetDrawLastEntryIfOutOfRoom]]()
+** '''Returns:''' '''boolean''' ''drawLastIfOutOfRoom''
+
+* {{GitHubSearch|Search=GetLineFade}} [[GetLineFade]]()
+** '''Returns:''' '''number''' ''timeBeforeLineBeginsToFade'', '''number''' ''timeItTakesLineToFade''
+
+* {{GitHubSearch|Search=GetLinkEnabled}} [[GetLinkEnabled]]()
+** '''Returns:''' '''boolean''' ''linkEnabed''
+
+* {{GitHubSearch|Search=GetMaxHistoryLines}} [[GetMaxHistoryLines]]()
+** '''Returns:''' '''number''' ''numLines''
+
+* {{GitHubSearch|Search=GetNumHistoryLines}} [[GetNumHistoryLines]]()
+** '''Returns:''' '''number''' ''numLines''
+
+* {{GitHubSearch|Search=GetNumVisibleLines}} [[GetNumVisibleLines]]()
+** '''Returns:''' '''number''' ''numLines''
+
+* {{GitHubSearch|Search=GetScrollPosition}} [[GetScrollPosition]]()
+** '''Returns:''' '''number''' ''scrollPosition''
+
+* {{GitHubSearch|Search=IsSplittingLongMessages}} [[IsSplittingLongMessages]]()
+** '''Returns:''' '''boolean''' ''isSplitting''
+
+* {{GitHubSearch|Search=MoveScrollPosition}} [[MoveScrollPosition]]('''number''' ''numLines'')
+
+* {{GitHubSearch|Search=SetClearBufferAfterFadeout}} [[SetClearBufferAfterFadeout]]('''boolean''' ''clearAfterFade'')
+
+* {{GitHubSearch|Search=SetColorById}} [[SetColorById]]('''number''' ''colorId'', '''number''' ''r'', '''number''' ''g'', '''number''' ''b'')
+
+* {{GitHubSearch|Search=SetDrawLastEntryIfOutOfRoom}} [[SetDrawLastEntryIfOutOfRoom]]('''boolean''' ''drawLastIfOutOfRoom'')
+
+* {{GitHubSearch|Search=SetFont}} [[SetFont]]('''string''' ''fontString'')
+
+* {{GitHubSearch|Search=SetHorizontalAlignment}} [[SetHorizontalAlignment]]('''number''' ''align'')
+
+* {{GitHubSearch|Search=SetLineFade}} [[SetLineFade]]('''number''' ''timeBeforeLineFadeBegins'', '''number''' ''timeForLineToFade'')
+
+* {{GitHubSearch|Search=SetLinesInheritAlpha}} [[SetLinesInheritAlpha]]('''boolean''' ''linesInheritAlpha'')
+
+* {{GitHubSearch|Search=SetLinkEnabled}} [[SetLinkEnabled]]('''boolean''' ''linkEnabed'')
+
+* {{GitHubSearch|Search=SetMaxHistoryLines}} [[SetMaxHistoryLines]]('''number''' ''numLines'')
+
+* {{GitHubSearch|Search=SetScrollPosition}} [[SetScrollPosition]]('''number''' ''line'')
+
+* {{GitHubSearch|Search=SetSplitLongMessages}} [[SetSplitLongMessages]]('''boolean''' ''splitLongMessages'')
+
+* {{GitHubSearch|Search=ShowFadedLines}} [[ShowFadedLines]]()
+
+
+===TextureCompositeControl===
+* {{GitHubSearch|Search=AddSurface}} [[AddSurface]]('''number''' ''left'', '''number''' ''right'', '''number''' ''top'', '''number''' ''bottom'')
+
+* {{GitHubSearch|Search=ClearAllSurfaces}} [[ClearAllSurfaces]]()
+
+* {{GitHubSearch|Search=GetBlendMode}} [[GetBlendMode]]()
+** '''Returns:''' '''number''' [[Globals#TextureBlendMode|TextureBlendMode]] ''blendMode''
+
+* {{GitHubSearch|Search=GetColor}} [[GetColor]]('''number''' ''surfaceIndex'')
+** '''Returns:''' '''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a''
+
+* {{GitHubSearch|Search=GetDesaturation}} [[GetDesaturation]]()
+** '''Returns:''' '''number''' ''desaturation''
+
+* {{GitHubSearch|Search=GetInsets}} [[GetInsets]]('''number''' ''surfaceIndex'')
+** '''Returns:''' '''number''' ''left'', '''number''' ''right'', '''number''' ''top'', '''number''' ''bottom''
+
+* {{GitHubSearch|Search=GetNumSurfaces}} [[GetNumSurfaces]]()
+** '''Returns:''' '''number''' ''surfaces''
+
+* {{GitHubSearch|Search=GetSurfaceAlpha}} [[GetSurfaceAlpha]]('''number''' ''surfaceIndex'')
+** '''Returns:''' '''number''' ''a''
+
+* {{GitHubSearch|Search=GetTextureCoords}} [[GetTextureCoords]]('''number''' ''surfaceIndex'')
+** '''Returns:''' '''number''' ''left'', '''number''' ''right'', '''number''' ''top'', '''number''' ''bottom''
+
+* {{GitHubSearch|Search=GetTextureFileDimensions}} [[GetTextureFileDimensions]]()
+** '''Returns:''' '''number''' ''pixelWidth'', '''number''' ''pixelHeight''
+
+* {{GitHubSearch|Search=GetTextureFileName}} [[GetTextureFileName]]()
+** '''Returns:''' '''string''' ''filename''
+
+* {{GitHubSearch|Search=IsPixelRoundingEnabled}} [[IsPixelRoundingEnabled]]()
+** '''Returns:''' '''boolean''' ''pixelRoundingEnabled''
+
+* {{GitHubSearch|Search=IsSurfaceHidden}} [[IsSurfaceHidden]]('''number''' ''surfaceIndex'')
+** '''Returns:''' '''boolean''' ''hidden''
+
+* {{GitHubSearch|Search=IsTextureLoaded}} [[IsTextureLoaded]]()
+** '''Returns:''' '''boolean''' ''loaded''
+
+* {{GitHubSearch|Search=RemoveSurface}} [[RemoveSurface]]('''number''' ''surfaceIndex'')
+
+* {{GitHubSearch|Search=SetBlendMode}} [[SetBlendMode]]('''number''' [[Globals#TextureBlendMode|TextureBlendMode]] ''blendMode'')
+
+* {{GitHubSearch|Search=SetColor}} [[SetColor]]('''number''' ''surfaceIndex'', '''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetDesaturation}} [[SetDesaturation]]('''number''' ''desaturation'')
+
+* {{GitHubSearch|Search=SetInsets}} [[SetInsets]]('''number''' ''surfaceIndex'', '''number''' ''left'', '''number''' ''right'', '''number''' ''top'', '''number''' ''bottom'')
+
+* {{GitHubSearch|Search=SetPixelRoundingEnabled}} [[SetPixelRoundingEnabled]]('''boolean''' ''pixelRoundingEnabled'')
+
+* {{GitHubSearch|Search=SetSurfaceAlpha}} [[SetSurfaceAlpha]]('''number''' ''surfaceIndex'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetSurfaceHidden}} [[SetSurfaceHidden]]('''number''' ''surfaceIndex'', '''boolean''' ''hidden'')
+
+* {{GitHubSearch|Search=SetTexture}} [[SetTexture]]('''string''' ''filename'')
+
+* {{GitHubSearch|Search=SetTextureCoords}} [[SetTextureCoords]]('''number''' ''surfaceIndex'', '''number''' ''left'', '''number''' ''right'', '''number''' ''top'', '''number''' ''bottom'')
+
+* {{GitHubSearch|Search=SetTextureReleaseOption}} [[SetTextureReleaseOption]]('''number''' [[Globals#ReleaseReferenceOptions|ReleaseReferenceOptions]] ''releaseOption'')
+
+
+===TextureControl===
+* {{GitHubSearch|Search=Get3DLocalDimensions}} [[Get3DLocalDimensions]]()
+** '''Returns:''' '''number''' ''width'', '''number''' ''height''
+
+* {{GitHubSearch|Search=GetAddressMode}} [[GetAddressMode]]()
+** '''Returns:''' '''number''' [[Globals#TextureAddressMode|TextureAddressMode]] ''addressMode''
+
+* {{GitHubSearch|Search=GetBlendMode}} [[GetBlendMode]]()
+** '''Returns:''' '''number''' [[Globals#TextureBlendMode|TextureBlendMode]] ''blendMode''
+
+* {{GitHubSearch|Search=GetColor}} [[GetColor]]()
+** '''Returns:''' '''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a''
+
+* {{GitHubSearch|Search=GetDesaturation}} [[GetDesaturation]]()
+** '''Returns:''' '''number''' ''desaturation''
+
+* {{GitHubSearch|Search=GetResizeToFitFile}} [[GetResizeToFitFile]]()
+** '''Returns:''' '''boolean''' ''resizesToFitFile''
+
+* {{GitHubSearch|Search=GetShaderEffectType}} [[GetShaderEffectType]]()
+** '''Returns:''' '''number''' [[Globals#ShaderEffectType|ShaderEffectType]] ''shaderEffectType''
+
+* {{GitHubSearch|Search=GetTextureCoords}} [[GetTextureCoords]]()
+** '''Returns:''' '''number''' ''left'', '''number''' ''right'', '''number''' ''top'', '''number''' ''bottom''
+
+* {{GitHubSearch|Search=GetTextureFileDimensions}} [[GetTextureFileDimensions]]()
+** '''Returns:''' '''number''' ''pixelWidth'', '''number''' ''pixelHeight''
+
+* {{GitHubSearch|Search=GetTextureFileName}} [[GetTextureFileName]]()
+** '''Returns:''' '''string''' ''filename''
+
+* {{GitHubSearch|Search=GetVertexUV}} [[GetVertexUV]]('''number''' [[Globals#VERTEX_POINTS|VERTEX_POINTS]] ''vertex'')
+** '''Returns:''' '''number''' ''u'', '''number''' ''v''
+
+* {{GitHubSearch|Search=Is3DQuadFacingCamera}} [[Is3DQuadFacingCamera]]()
+** '''Returns:''' '''boolean''' ''isFacing''
+
+* {{GitHubSearch|Search=IsPixelRoundingEnabled}} [[IsPixelRoundingEnabled]]()
+** '''Returns:''' '''boolean''' ''pixelRoundingEnabled''
+
+* {{GitHubSearch|Search=IsTextureLoaded}} [[IsTextureLoaded]]()
+** '''Returns:''' '''boolean''' ''loaded''
+
+* {{GitHubSearch|Search=Set3DLocalDimensions}} [[Set3DLocalDimensions]]('''number''' ''width'', '''number''' ''height'')
+
+* {{GitHubSearch|Search=SetAddressMode}} [[SetAddressMode]]('''number''' [[Globals#TextureAddressMode|TextureAddressMode]] ''addressMode'')
+
+* {{GitHubSearch|Search=SetAutoAdjustWrappedCoords}} [[SetAutoAdjustWrappedCoords]]('''boolean''' ''enabled'')
+
+* {{GitHubSearch|Search=SetBlendMode}} [[SetBlendMode]]('''number''' [[Globals#TextureBlendMode|TextureBlendMode]] ''blendMode'')
+
+* {{GitHubSearch|Search=SetColor}} [[SetColor]]('''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' ''a'')
+
+* {{GitHubSearch|Search=SetDesaturation}} [[SetDesaturation]]('''number''' ''desaturation'')
+
+* {{GitHubSearch|Search=SetGradientColors}} [[SetGradientColors]]('''number''' [[Globals#ControlOrientation|ControlOrientation]] ''orientation'', '''number''' ''startR'', '''number''' ''startG'', '''number''' ''startB'', '''number''' ''startA'', '''number''' ''endR'', '''number''' ''endG'', '''number''' ''endB'', '''number''' ''endA'')
+
+* {{GitHubSearch|Search=SetPixelRoundingEnabled}} [[SetPixelRoundingEnabled]]('''boolean''' ''pixelRoundingEnabled'')
+
+* {{GitHubSearch|Search=SetResizeToFitFile}} [[SetResizeToFitFile]]('''boolean''' ''resizesToFitFile'')
+
+* {{GitHubSearch|Search=SetShaderEffectType}} [[SetShaderEffectType]]('''number''' [[Globals#ShaderEffectType|ShaderEffectType]] ''shaderEffectType'')
+
+* {{GitHubSearch|Search=SetTexture}} [[SetTexture]]('''string''' ''filename'')
+
+* {{GitHubSearch|Search=SetTextureCoords}} [[SetTextureCoords]]('''number''' ''left'', '''number''' ''right'', '''number''' ''top'', '''number''' ''bottom'')
+
+* {{GitHubSearch|Search=SetTextureCoordsRotation}} [[SetTextureCoordsRotation]]('''number''' ''angleInRadians'')
+
+* {{GitHubSearch|Search=SetTextureReleaseOption}} [[SetTextureReleaseOption]]('''number''' [[Globals#ReleaseReferenceOptions|ReleaseReferenceOptions]] ''releaseOption'')
+
+* {{GitHubSearch|Search=SetTextureRotation}} [[SetTextureRotation]]('''number''' ''angleInRadians'', '''number''' ''normalizedRotationPointX'', '''number''' ''normalizedRotationPointY'')
+
+* {{GitHubSearch|Search=SetTextureSampleProcessingWeight}} [[SetTextureSampleProcessingWeight]]('''number''' [[Globals#TextureSampleProcessing|TextureSampleProcessing]] ''sampleProcessingType'', '''number''' ''weight'')
+
+* {{GitHubSearch|Search=SetVertexColors}} [[SetVertexColors]]('''number''' ''vertexPoints'', '''number''' ''red'', '''number''' ''green'', '''number''' ''blue'', '''number''' ''alpha'')
+
+* {{GitHubSearch|Search=SetVertexUV}} [[SetVertexUV]]('''number''' [[Globals#VERTEX_POINTS|VERTEX_POINTS]] ''vertex'', '''number''' ''u'', '''number''' ''v'')
+
+
+===TooltipControl===
+* {{GitHubSearch|Search=AddControl}} [[AddControl]]('''object''' ''control'', '''number''' ''cell'', '''boolean''' ''useLastRow'')
+
+* {{GitHubSearch|Search=AddHeaderControl}} [[AddHeaderControl]]('''object''' ''control'', '''number''' ''headerRow'', '''number''' [[Globals#TooltipHeaderSide|TooltipHeaderSide]] ''headerSide'')
+
+* {{GitHubSearch|Search=AddHeaderLine}} [[AddHeaderLine]]('''string''' ''text'', '''string''' ''font'', '''number''' ''headerRow'', '''number''' [[Globals#TooltipHeaderSide|TooltipHeaderSide]] ''headerSide'', '''number''' ''r'', '''number''' ''g'', '''number''' ''b'')
+
+* {{GitHubSearch|Search=AddLine}} [[AddLine]]('''string''' ''text'', '''string''' ''font'', '''number''' ''r'', '''number''' ''g'', '''number''' ''b'', '''number''' [[Globals#AnchorPosition|AnchorPosition]] ''lineAnchor'', '''number''' [[Globals#ModifyTextType|ModifyTextType]] ''modifyTextType'', '''number''' [[Globals#TextAlignment|TextAlignment]] ''textAlignment'', '''boolean''' ''setToFullSize'', '''number''' ''minWidth'')
+
+* {{GitHubSearch|Search=AddVerticalPadding}} [[AddVerticalPadding]]('''number''' ''paddingY'')
+
+* {{GitHubSearch|Search=AppendAvAObjective}} [[AppendAvAObjective]]('''number''' ''queryType'', '''number''' ''keepId'', '''number''' ''objectiveId'', '''number''' [[Globals#ObjectivePinTier|ObjectivePinTier]] ''objectivePinTier'')
+
+* {{GitHubSearch|Search=AppendMapPing}} [[AppendMapPing]]('''number''' ''pingType'', '''string''' ''unitTag'')
+
+* {{GitHubSearch|Search=AppendQuestCondition}} [[AppendQuestCondition]]('''number''' ''questIndex'', '''number''' ''stepIndex'', '''number''' ''conditionIndex'')
+
+* {{GitHubSearch|Search=AppendQuestEnding}} [[AppendQuestEnding]]('''number''' ''questIndex'')
+
+* {{GitHubSearch|Search=AppendUnitName}} [[AppendUnitName]]('''string''' ''unitTag'')
+
+* {{GitHubSearch|Search=ClearLines}} [[ClearLines]]()
+
+* {{GitHubSearch|Search=GetOwner}} [[GetOwner]]()
+** '''Returns:''' '''object''' ''owner''
+
+* {{GitHubSearch|Search=HideComparativeTooltips}} [[HideComparativeTooltips]]()
+
+* {{GitHubSearch|Search=SetAbility}} [[SetAbility]]('''number''' ''aAbilityIndex'', '''boolean''' ''aShowBase'')
+
+* {{GitHubSearch|Search=SetAbilityId}} [[SetAbilityId]]('''number''' ''abilityId'')
+
+* {{GitHubSearch|Search=SetAchievement}} [[SetAchievement]]('''number''' ''aAchievementId'')
+
+* {{GitHubSearch|Search=SetAchievementRewardItem}} [[SetAchievementRewardItem]]('''number''' ''aAchievementId'')
+
+* {{GitHubSearch|Search=SetAction}} [[SetAction]]('''number''' ''aSlotId'')
+
+* {{GitHubSearch|Search=SetActiveSkill}} [[SetActiveSkill]]('''number''' [[Globals#SkillType|SkillType]] ''skillType'', '''number''' ''skillLineIndex'', '''number''' ''skillIndex'', '''number''' [[Globals#MorphSlot|MorphSlot]] ''morphSlot'', '''boolean''' ''isPurchased'', '''boolean''' ''isAdvised'', '''boolean''' ''isBadMorph'', '''number''' ''numAvailableSkillPoints'', '''boolean''' ''showSkillPointCost'', '''boolean''' ''showUpgradeText'', '''boolean''' ''showAdvised'', '''boolean''' ''showBadMorph'', '''number:nilable''' ''overrideRank'', '''number:nilable''' ''overrideAbilityId'')
+
+* {{GitHubSearch|Search=SetAsComparativeTooltip1}} [[SetAsComparativeTooltip1]]()
+
+* {{GitHubSearch|Search=SetAsComparativeTooltip2}} [[SetAsComparativeTooltip2]]()
+
+* {{GitHubSearch|Search=SetAttachedMailItem}} [[SetAttachedMailItem]]('''id64''' ''aMailId'', '''number''' ''aAttachSlot'')
+
+* {{GitHubSearch|Search=SetBagItem}} [[SetBagItem]]('''number''' [[Globals#Bag|Bag]] ''bagIndex'', '''number''' ''slotIndex'')
+
+* {{GitHubSearch|Search=SetBook}} [[SetBook]]('''number''' ''categoryIndex'', '''number''' ''collectionIndex'', '''number''' ''bookIndex'')
+
+* {{GitHubSearch|Search=SetBuff}} [[SetBuff]]('''number''' ''aBuffSlotId'', '''string''' ''unitTag'')
+
+* {{GitHubSearch|Search=SetBuybackItem}} [[SetBuybackItem]]('''number''' ''entryIndex'')
+
+* {{GitHubSearch|Search=SetChampionSkillAbility}} [[SetChampionSkillAbility]]('''number''' ''disiplineIndex'', '''number''' ''skillIndex'', '''number''' ''numPendingPoints'')
+
+* {{GitHubSearch|Search=SetCollectible}} [[SetCollectible]]('''number''' ''collectibleId'', '''boolean''' ''addNickname'', '''boolean''' ''showPurchasableHint'', '''boolean''' ''showBlockReason'')
+
+* {{GitHubSearch|Search=SetCurrency}} [[SetCurrency]]('''number''' [[Globals#CurrencyType|CurrencyType]] ''currencyType'', '''number''' ''quantity'')
+
+* {{GitHubSearch|Search=SetDailyLoginRewardEntry}} [[SetDailyLoginRewardEntry]]('''number''' ''rewardIndex'')
+
+* {{GitHubSearch|Search=SetEdgeKeepBonusAbility}} [[SetEdgeKeepBonusAbility]]('''number''' ''bonusIndex'')
+
+* {{GitHubSearch|Search=SetEmperorBonusAbility}} [[SetEmperorBonusAbility]]('''number''' ''campaignId'', '''number''' [[Globals#Alliance|Alliance]] ''alliance'')
+
+* {{GitHubSearch|Search=SetFont}} [[SetFont]]('''string''' ''fontStr'')
+
+* {{GitHubSearch|Search=SetGuildSpecificItem}} [[SetGuildSpecificItem]]('''number''' ''guildSpecificItemIndex'')
+
+* {{GitHubSearch|Search=SetHeaderRowSpacing}} [[SetHeaderRowSpacing]]('''number''' ''spacing'')
+
+* {{GitHubSearch|Search=SetHeaderVerticalOffset}} [[SetHeaderVerticalOffset]]('''number''' ''verticalOffset'')
+
+* {{GitHubSearch|Search=SetItemUsingEnchantment}} [[SetItemUsingEnchantment]]('''number''' [[Globals#Bag|Bag]] ''itemBagIndex'', '''number''' ''itemSlotIndex'', '''number''' [[Globals#Bag|Bag]] ''enchantmentBagIndex'', '''number''' ''enchantmentSlotIndex'')
+
+* {{GitHubSearch|Search=SetKeepBonusAbility}} [[SetKeepBonusAbility]]('''number''' ''bonusIndex'')
+
+* {{GitHubSearch|Search=SetKeepUpgrade}} [[SetKeepUpgrade]]('''number''' ''keepId'', '''number''' [[Globals#BattlegroundQueryContextType|BattlegroundQueryContextType]] ''battlegroundContext'', '''number''' ''upgradeLine'', '''number''' ''level'', '''number''' ''index'')
+
+* {{GitHubSearch|Search=SetLastCraftingResultItem}} [[SetLastCraftingResultItem]]('''number''' ''resultIndex'')
+
+* {{GitHubSearch|Search=SetLink}} [[SetLink]]('''string''' ''aLink'')
+
+* {{GitHubSearch|Search=SetLootItem}} [[SetLootItem]]('''number''' ''lootId'')
+
+* {{GitHubSearch|Search=SetMarketProduct}} [[SetMarketProduct]]('''number''' ''marketProductId'', '''boolean''' ''showCollectiblePurchasableHint'')
+
+* {{GitHubSearch|Search=SetMarketProductListing}} [[SetMarketProductListing]]('''number''' ''marketProductId'', '''number:nilable''' ''presentationIndex'')
+
+* {{GitHubSearch|Search=SetMinHeaderRowHeight}} [[SetMinHeaderRowHeight]]('''number''' ''minRowHeight'')
+
+* {{GitHubSearch|Search=SetMinHeaderRows}} [[SetMinHeaderRows]]('''number''' ''minRows'')
+
+* {{GitHubSearch|Search=SetOwner}} [[SetOwner]]('''object''' ''owner'', '''number''' ''position'', '''number''' ''offsetX'', '''number''' ''offsetY'', '''number''' ''relativePoint'')
+
+* {{GitHubSearch|Search=SetPassiveSkill}} [[SetPassiveSkill]]('''number''' [[Globals#SkillType|SkillType]] ''skillType'', '''number''' ''skillLineIndex'', '''number''' ''skillIndex'', '''number''' ''rank'', '''number''' ''purchasedToRank'', '''number''' ''numAvailableSkillPoints'', '''boolean''' ''showSkillPointCost'')
+
+* {{GitHubSearch|Search=SetPendingAlchemyItem}} [[SetPendingAlchemyItem]]('''number''' [[Globals#Bag|Bag]] ''solventBagId'', '''number''' ''solventSlotIndex'', '''number''' [[Globals#Bag|Bag]] ''reagent1BagId'', '''number''' ''reagent1SlotIndex'', '''number''' [[Globals#Bag|Bag]] ''reagent2BagId'', '''number''' ''reagent2SlotIndex'', '''number:nilable''' [[Globals#Bag|Bag]] ''reagent3BagId'', '''number:nilable''' ''reagent3SlotIndex'')
+
+* {{GitHubSearch|Search=SetPendingEnchantingItem}} [[SetPendingEnchantingItem]]('''number''' [[Globals#Bag|Bag]] ''potencyRuneBagId'', '''number''' ''potencyRuneSlotIndex'', '''number''' [[Globals#Bag|Bag]] ''essenceRuneBagId'', '''number''' ''essenceRuneSlotIndex'', '''number''' [[Globals#Bag|Bag]] ''aspectRuneBagId'', '''number''' ''aspectRuneSlotIndex'')
+
+* {{GitHubSearch|Search=SetPendingRetraitItem}} [[SetPendingRetraitItem]]('''number''' [[Globals#Bag|Bag]] ''bagIndex'', '''number''' ''slotIndex'', '''number''' [[Globals#ItemTraitType|ItemTraitType]] ''pendingTrait'')
+
+* {{GitHubSearch|Search=SetPendingSmithingItem}} [[SetPendingSmithingItem]]('''number''' ''patternIndex'', '''number''' ''materialIndex'', '''number''' ''materialQuantity'', '''number''' ''itemStyleId'', '''number''' ''traitIndex'')
+
+* {{GitHubSearch|Search=SetPlacedFurniture}} [[SetPlacedFurniture]]('''id64''' ''placedFurnitureId'')
+
+* {{GitHubSearch|Search=SetProgressionAbility}} [[SetProgressionAbility]]('''number''' ''aProgressionIndex'', '''number''' ''aMorph'', '''number''' ''aRank'', '''boolean''' ''aShowAdvice'', '''boolean''' ''aAdvised'')
+
+* {{GitHubSearch|Search=SetProvisionerIngredientItem}} [[SetProvisionerIngredientItem]]('''number''' ''recipeListIndex'', '''number''' ''recipeIndex'', '''number''' ''ingredientIndex'')
+
+* {{GitHubSearch|Search=SetProvisionerResultItem}} [[SetProvisionerResultItem]]('''number''' ''recipeListIndex'', '''number''' ''recipeIndex'')
+
+* {{GitHubSearch|Search=SetQuestItem}} [[SetQuestItem]]('''number''' ''questIndex'', '''number''' ''stepIndex'', '''number''' ''conditionIndex'')
+
+* {{GitHubSearch|Search=SetQuestReward}} [[SetQuestReward]]('''number''' ''aPerkIndex'')
+
+* {{GitHubSearch|Search=SetQuestTool}} [[SetQuestTool]]('''number''' ''questIndex'', '''number''' ''toolIndex'')
+
+* {{GitHubSearch|Search=SetReward}} [[SetReward]]('''number''' ''rewardId'', '''number''' ''quantity'')
+
+* {{GitHubSearch|Search=SetScrollBonusAbility}} [[SetScrollBonusAbility]]('''number''' [[Globals#Alliance|Alliance]] ''alliance'', '''number''' [[Globals#ObjectiveType|ObjectiveType]] ''artifactType'', '''number''' ''bonusIndex'')
+
+* {{GitHubSearch|Search=SetSkillAbility}} [[SetSkillAbility]]('''number''' ''skillType'', '''number''' ''skillLineIndex'', '''number''' ''skillIndex'', '''boolean''' ''badMorph'')
+
+* {{GitHubSearch|Search=SetSkillLine}} [[SetSkillLine]]('''number''' ''skillType'', '''number''' ''skillLineIndex'')
+
+* {{GitHubSearch|Search=SetSkillLineAbilityId}} [[SetSkillLineAbilityId]]('''number''' ''abilityId'', '''number''' [[Globals#SkillType|SkillType]] ''skillType'', '''number''' ''skillLineIndex'', '''number''' ''skillLineAbilityIndex'', '''number''' ''morphChoice'')
+
+* {{GitHubSearch|Search=SetSkillUpgradeAbility}} [[SetSkillUpgradeAbility]]('''number''' ''skillType'', '''number''' ''skillLineIndex'', '''number''' ''skillIndex'')
+
+* {{GitHubSearch|Search=SetSmithingImprovementItem}} [[SetSmithingImprovementItem]]('''number''' ''craftingSkillType'', '''number''' ''improvementItemIndex'')
+
+* {{GitHubSearch|Search=SetSmithingImprovementResult}} [[SetSmithingImprovementResult]]('''number''' [[Globals#Bag|Bag]] ''itemToImproveBagId'', '''number''' ''itemToImproveSlotIndex'', '''number''' ''craftingSkillType'')
+
+* {{GitHubSearch|Search=SetSmithingMaterialItem}} [[SetSmithingMaterialItem]]('''number''' ''patternIndex'', '''number''' ''materialIndex'')
+
+* {{GitHubSearch|Search=SetSmithingStyleItem}} [[SetSmithingStyleItem]]('''number''' ''itemStyleId'')
+
+* {{GitHubSearch|Search=SetSmithingTraitItem}} [[SetSmithingTraitItem]]('''number''' ''traitItemIndex'')
+
+* {{GitHubSearch|Search=SetStoreItem}} [[SetStoreItem]]('''number''' ''entryIndex'')
+
+* {{GitHubSearch|Search=SetTradeItem}} [[SetTradeItem]]('''number''' ''aWho'', '''number''' ''aTradeIndex'')
+
+* {{GitHubSearch|Search=SetTradingHouseItem}} [[SetTradingHouseItem]]('''number''' ''tradingHouseIndex'')
+
+* {{GitHubSearch|Search=SetTradingHouseListing}} [[SetTradingHouseListing]]('''number''' ''tradingHouseIndex'')
+
+* {{GitHubSearch|Search=SetVerticalPadding}} [[SetVerticalPadding]]('''number''' ''paddingY'')
+
+* {{GitHubSearch|Search=SetWornItem}} [[SetWornItem]]('''number''' ''equipSlot'')
+
+* {{GitHubSearch|Search=ShowComparativeTooltips}} [[ShowComparativeTooltips]]()
+
+
+===TopLevelWindow===
+* {{GitHubSearch|Search=AllowBringToTop}} [[AllowBringToTop]]()
+** '''Returns:''' '''boolean''' ''allow''
+
+* {{GitHubSearch|Search=BringWindowToTop}} {{Protected_attributes}} [[BringWindowToTop]]()
+
+* {{GitHubSearch|Search=SetAllowBringToTop}} {{Protected_attributes}} [[SetAllowBringToTop]]('''boolean''' ''allow'')
+
+* {{GitHubSearch|Search=SetDrawWhenGuiHidden}} {{Private function}} [[SetDrawWhenGuiHidden]]('''boolean''' ''drawWhenHidden'')
+
+* {{GitHubSearch|Search=SetTopmost}} [[SetTopmost]]('''boolean''' ''isTopmost'')
+
+
+===WindowManager===
+* {{GitHubSearch|Search=ApplyTemplateToControl}} [[ApplyTemplateToControl]]('''object''' ''control'', '''string''' ''virtualName'')
+
+* {{GitHubSearch|Search=CompareControlVisualOrder}} [[CompareControlVisualOrder]]('''object''' ''controlA'', '''object''' ''controlB'')
+** '''Returns:''' '''number''' ''order''
+
+* {{GitHubSearch|Search=CreateControl}} [[CreateControl]]('''string''' ''name'', '''object''' ''parent'', '''number''' [[Globals#ControlType|ControlType]] ''type'')
+** '''Returns:''' '''object''' ''apRet''
+
+* {{GitHubSearch|Search=CreateControlFromVirtual}} [[CreateControlFromVirtual]]('''string''' ''controlName'', '''object''' ''parent'', '''string''' ''virtualName'', '''string''' ''optionalSuffix'')
+** '''Returns:''' '''object''' ''apRet''
+
+* {{GitHubSearch|Search=CreateTopLevelWindow}} [[CreateTopLevelWindow]]('''string''' ''name'')
+** '''Returns:''' '''object''' ''apRet''
+
+* {{GitHubSearch|Search=GetControlByName}} [[GetControlByName]]('''string''' ''name'', '''string''' ''suffix'')
+** '''Returns:''' '''object''' ''ret''
+
+* {{GitHubSearch|Search=GetFocusControl}} [[GetFocusControl]]()
+** '''Returns:''' '''object''' ''focusControl''
+
+* {{GitHubSearch|Search=GetHandler}} [[GetHandler]]('''string''' ''handlerName'')
+** '''Returns:''' '''function''' ''functionRef''
+
+* {{GitHubSearch|Search=GetIMECandidate}} [[GetIMECandidate]]('''number''' ''index'')
+** '''Returns:''' '''string''' ''candidate''
+
+* {{GitHubSearch|Search=GetIMECandidatePageInfo}} [[GetIMECandidatePageInfo]]()
+** '''Returns:''' '''number''' ''selectedIndex'', '''number''' ''pageStartIndex'', '''number''' ''pageSize''
+
+* {{GitHubSearch|Search=GetMouseOverControl}} [[GetMouseOverControl]]()
+** '''Returns:''' '''object''' ''mouseOverControl''
+
+* {{GitHubSearch|Search=GetNumIMECandidates}} [[GetNumIMECandidates]]()
+** '''Returns:''' '''number''' ''numCandidates''
+
+* {{GitHubSearch|Search=IsChoosingIMECandidate}} [[IsChoosingIMECandidate]]()
+** '''Returns:''' '''boolean''' ''isChoosingCandidate''
+
+* {{GitHubSearch|Search=IsHandlingHardwareEvent}} [[IsHandlingHardwareEvent]]()
+** '''Returns:''' '''boolean''' ''isHandlingHardwareEvent''
+
+* {{GitHubSearch|Search=IsMouseOverWorld}} [[IsMouseOverWorld]]()
+** '''Returns:''' '''boolean''' ''isMouseOverWorld''
+
+* {{GitHubSearch|Search=IsSecureRenderModeEnabled}} [[IsSecureRenderModeEnabled]]()
+** '''Returns:''' '''boolean''' ''secureRenderModeEnabled''
+
+* {{GitHubSearch|Search=IsUsingCustomCandidateList}} [[IsUsingCustomCandidateList]]()
+** '''Returns:''' '''boolean''' ''isUsingCustomCandidateList''
+
+* {{GitHubSearch|Search=SetFocusByName}} [[SetFocusByName]]('''string''' ''name'')
+
+* {{GitHubSearch|Search=SetHandler}} [[SetHandler]]('''string''' ''handlerName'', '''function''' ''functionRef'')
+
+* {{GitHubSearch|Search=SetMouseCursor}} [[SetMouseCursor]]('''number''' ''cursorType'')
+
+* {{GitHubSearch|Search=SetMouseFocusByName}} [[SetMouseFocusByName]]('''string''' ''name'')
+
+
