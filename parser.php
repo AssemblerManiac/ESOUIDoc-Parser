@@ -1,11 +1,24 @@
 <?php
-$File2Import = 'ESOUIDocumentationP21-2.txt';
+$Ver2Use = 'P23';
+$File2Import = 'ESOUIDocumentation' . $Ver2Use . '.txt';
+$SubDirOut = $Ver2Use . '\\';
 
 $topLevels = array('Global Variables' => array('MaxLinesPerEntry' => 1),
 				 'Events' => array('MaxLinesPerEntry' => 1),
 				 'UI XML Layout' => array('MaxLinesPerEntry' => 1),
 				 'Game API' => array('MaxLinesPerEntry' => 2),
 				 'Object API' => array('MaxLinesPerEntry' => 2));
+
+/*
+ wiki pages to update
+ https://wiki.esoui.com/Globals
+ https://wiki.esoui.com/Events
+ 	- have to be done manually since the wiki is grouped and the original doc file isn't
+	- compare old txt to new txt, make changes in wiki as needed
+ https://wiki.esoui.com/UI_XML
+ https://wiki.esoui.com/API
+ https://wiki.esoui.com/Controls
+ */
 
 $CurrLevel = '';
 $CurrSubLevel = '';
@@ -93,8 +106,9 @@ function GameAPISort($a, $b)
 function WriteAPIFiltered($filter)
 	{
 	global $topLevels;
+	global $SubDirOut;
 
-	$handle = fopen('GameAPI_' . $filter . '_Funcs.txt', 'w');
+	$handle = fopen($SubDirOut . 'GameAPI_' . $filter . '_Funcs.txt', 'w');
 	foreach($topLevels['Game API']['Default'] as $index => $entry)
 		{
 		if ( strpos($entry[0], $filter . ' function') > 0 )
@@ -109,10 +123,11 @@ function WriteAPIFiltered($filter)
 function ProcessGameAPI()
 	{
 	global $topLevels;
+	global $SubDirOut;
 
 	usort($topLevels['Game API']['Default'], "GameAPISort");
 
-	$handle1 = fopen('GameAPI.txt', 'w');
+	$handle1 = fopen($SubDirOut . 'GameAPI.txt', 'w');
 	foreach ( $topLevels['Game API']['Default'] as $index => $entry )
 		{
 		$searchfor = array(
@@ -200,10 +215,11 @@ function ProcessGameAPI()
 function ProcessEvents()
 	{
 	global $topLevels;
+	global $SubDirOut;
 
 	sort($topLevels['Events']['Default']);
 
-	$handle = fopen('Events.txt', 'w');
+	$handle = fopen($SubDirOut . 'Events.txt', 'w');
 	foreach ( $topLevels['Events']['Default'] as $index => $entry )
 		{
 		$searchfor = array(
@@ -269,8 +285,9 @@ function ProcessEvents()
 function ProcessObjectAPI()
 	{
 	global $topLevels;
+	global $SubDirOut;
 
-	$handle = fopen('ObjectAPI.txt', 'w');
+	$handle = fopen($SubDirOut . 'ObjectAPI.txt', 'w');
 	foreach ( $topLevels['Object API'] as $index => $entry )
 		{
 		if ( gettype($entry) != 'array' )
@@ -365,10 +382,11 @@ function ProcessObjectAPI()
 function ProcessGlobalVars()
 	{
 	global $topLevels;
+	global $SubDirOut;
 
 	ksort($topLevels['Global Variables']);
 
-	$handle = fopen('GlobalVariables.txt', 'w');
+	$handle = fopen($SubDirOut . 'GlobalVariables.txt', 'w');
 	foreach ( $topLevels['Global Variables'] as $index => $entry )
 		{
 		if ( gettype($entry) != 'array' )
@@ -401,10 +419,11 @@ function ProcessGlobalVars()
 function ProcessUIXML()
 	{
 	global $topLevels;
+	global $SubDirOut;
 
 	//ksort($topLevels['UI XML Layout']);
 
-	$handle = fopen('UI_XML_Layout.txt', 'w');
+	$handle = fopen($SubDirOut . 'UI_XML_Layout.txt', 'w');
 	foreach ( $topLevels['UI XML Layout'] as $index => $entry )
 		{
 		if ( gettype($entry) != 'array' )
@@ -414,7 +433,7 @@ function ProcessUIXML()
 		fwrite($handle, '===' . str_replace(':', '', $index) . "===\r\n");
 		if ( !isset($entry[0]) )
 			{
-			fwrite("\r\n");
+			fwrite($handle, "\r\n");
 			}
 		foreach ( $entry as $subindex => $subentry  )
 			{
@@ -467,6 +486,6 @@ ProcessGlobalVars();
 ProcessUIXML();
 
 //print_r($APIVer);
-print_r($topLevels);
+//print_r($topLevels);
 //print_r($topLevels['Game API']['Default']);
 //print_r($topLevels['UI XML Layout']);
